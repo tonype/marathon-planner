@@ -5,12 +5,48 @@
   "description": "Survival and recovery.",
   "agent": "Moros",
   "capstones": [
-    { "level": 1, "name": "Resilient", "nodesRequired": 6, "rankRequired": 0, "description": "ROOK will now start runs with a Patch Kit and Shield Charge. NuCaloric will now barter their wares for certain Deluxe Salvage." },
-    { "level": 2, "name": "Treasure Hunter", "nodesRequired": 12, "rankRequired": 0, "description": "NuCal Treasure Reputation (+20%)." },
-    { "level": 3, "name": "Sponsorship [NuCaloric]", "nodesRequired": 18, "rankRequired": 0, "description": "Unlocks NuCaloric Advanced Sponsored Kit for purchase in the Armory. NuCaloric will now barter their wares for certain Superior Salvage." },
-    { "level": 4, "name": "Fame Rank IV", "nodesRequired": 24, "rankRequired": 0, "description": "Self-Revives have a small chance to not be consumed on use." },
-    { "level": 5, "name": "HUSH.EXE", "nodesRequired": 30, "rankRequired": 0, "description": "You make less noise while healing." },
-    { "level": 6, "name": "Reinforced", "nodesRequired": 36, "rankRequired": 0, "description": "Unlocks Superior Shield Implants for purchase in the Armory. NuCaloric will now barter their wares for certain Prestige Salvage." }
+    {
+      "level": 1,
+      "name": "Resilient",
+      "nodesRequired": 6,
+      "rankRequired": 0,
+      "description": "ROOK will now start runs with a Patch Kit and Shield Charge. NuCaloric will now barter their wares for certain Deluxe Salvage."
+    },
+    {
+      "level": 2,
+      "name": "Treasure Hunter",
+      "nodesRequired": 12,
+      "rankRequired": 0,
+      "description": "NuCal Treasure Reputation (+20%)."
+    },
+    {
+      "level": 3,
+      "name": "Sponsorship [NuCaloric]",
+      "nodesRequired": 18,
+      "rankRequired": 0,
+      "description": "Unlocks NuCaloric Advanced Sponsored Kit for purchase in the Armory. NuCaloric will now barter their wares for certain Superior Salvage."
+    },
+    {
+      "level": 4,
+      "name": "Fame Rank IV",
+      "nodesRequired": 24,
+      "rankRequired": 0,
+      "description": "Self-Revives have a small chance to not be consumed on use."
+    },
+    {
+      "level": 5,
+      "name": "HUSH.EXE",
+      "nodesRequired": 30,
+      "rankRequired": 0,
+      "description": "You make less noise while healing."
+    },
+    {
+      "level": 6,
+      "name": "Reinforced",
+      "nodesRequired": 36,
+      "rankRequired": 0,
+      "description": "Unlocks Superior Shield Implants for purchase in the Armory. NuCaloric will now barter their wares for certain Prestige Salvage."
+    }
   ],
   "upgrades": [
     {
@@ -18,9 +54,19 @@
       "name": "Safeguard",
       "category": "Armory",
       "description": "Unlocks daily free Shield Charges in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 16 }], "effect": "Free Daily Shield Charges in the Armory" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 1,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 16
+            }
+          ],
+          "effect": "Free Daily Shield Charges in the Armory"
+        }
       ]
     },
     {
@@ -28,9 +74,23 @@
       "name": "Advanced Shields",
       "category": "Armory",
       "description": "Unlocks Advanced Shield Charges for purchase in the Armory.",
-      "prerequisites": ["safeguard"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 6, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 10 }, { "salvageId": "unstable_biomass", "quantity": 10 }], "effect": "Unlocks Advanced Shield Charges" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 6,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 10
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks Advanced Shield Charges"
+        }
       ]
     },
     {
@@ -38,10 +98,40 @@
       "name": "Safeguard+",
       "category": "Armory",
       "description": "Unlocks daily free Advanced Shield Charges in the Armory.",
-      "prerequisites": ["advanced_shields"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 11, "creditCost": 2000, "salvage": [{ "salvageId": "sterilized_biostripping", "quantity": 6 }, { "salvageId": "sparkleaf", "quantity": 16 }], "effect": "Free Daily Advanced Shield Charges in the Armory" },
-        { "rank": 2, "factionLevelRequired": 12, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 15 }, { "salvageId": "sparkleaf", "quantity": 8 }], "effect": "Advanced Shield Charge stock +5", "titleOverride": "Shield Stock" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 11,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "sterilized_biostripping",
+              "quantity": 6
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 16
+            }
+          ],
+          "effect": "Free Daily Advanced Shield Charges in the Armory"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 12,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 15
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 8
+            }
+          ],
+          "effect": "Advanced Shield Charge stock +5",
+          "titleOverride": "Shield Stock"
+        }
       ]
     },
     {
@@ -49,9 +139,23 @@
       "name": "Shield Comm",
       "category": "Function",
       "description": "NuCaloric standard contracts will now award Shield Charges in addition to other rewards.",
-      "prerequisites": ["safeguard_plus"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 15, "creditCost": 2000, "salvage": [{ "salvageId": "sterilized_biostripping", "quantity": 12 }, { "salvageId": "tarax_seed", "quantity": 6 }], "effect": "Shield Charges from NuCal contracts" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 15,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "sterilized_biostripping",
+              "quantity": 12
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 6
+            }
+          ],
+          "effect": "Shield Charges from NuCal contracts"
+        }
       ]
     },
     {
@@ -59,9 +163,19 @@
       "name": "Restore",
       "category": "Armory",
       "description": "Unlocks daily free Patch Kits in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 23 }], "effect": "Free Daily Patch Kits in the Armory" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 3,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 23
+            }
+          ],
+          "effect": "Free Daily Patch Kits in the Armory"
+        }
       ]
     },
     {
@@ -69,9 +183,23 @@
       "name": "Advanced Patch",
       "category": "Armory",
       "description": "Unlocks Advanced Patch Kits for purchase in the Armory.",
-      "prerequisites": ["restore"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 8, "creditCost": 1500, "salvage": [{ "salvageId": "dermachem_pack", "quantity": 10 }, { "salvageId": "unstable_biomass", "quantity": 13 }], "effect": "Unlocks Advanced Patch Kits" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 8,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "dermachem_pack",
+              "quantity": 10
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 13
+            }
+          ],
+          "effect": "Unlocks Advanced Patch Kits"
+        }
       ]
     },
     {
@@ -79,10 +207,40 @@
       "name": "Restore Plus",
       "category": "Armory",
       "description": "Unlocks daily free Advanced Patch Kits in the Armory.",
-      "prerequisites": ["advanced_patch"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 10, "creditCost": 2000, "salvage": [{ "salvageId": "neurochem_pack", "quantity": 5 }, { "salvageId": "sparkleaf", "quantity": 16 }], "effect": "Free Daily Advanced Patch Kits in the Armory" },
-        { "rank": 2, "factionLevelRequired": 12, "creditCost": 1500, "salvage": [{ "salvageId": "dermachem_pack", "quantity": 8 }, { "salvageId": "unstable_biomass", "quantity": 11 }], "effect": "Advanced Patch Kit stock +5", "titleOverride": "Patch Stock" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 10,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "neurochem_pack",
+              "quantity": 5
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 16
+            }
+          ],
+          "effect": "Free Daily Advanced Patch Kits in the Armory"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 12,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "dermachem_pack",
+              "quantity": 8
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 11
+            }
+          ],
+          "effect": "Advanced Patch Kit stock +5",
+          "titleOverride": "Patch Stock"
+        }
       ]
     },
     {
@@ -90,9 +248,19 @@
       "name": "Health Comm",
       "category": "Function",
       "description": "NuCaloric standard contracts will now award Patch Kits in addition to other rewards.",
-      "prerequisites": ["restore_plus"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 24, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }], "effect": "Patch Kits from NuCal contracts" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 24,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 2
+            }
+          ],
+          "effect": "Patch Kits from NuCal contracts"
+        }
       ]
     },
     {
@@ -100,11 +268,51 @@
       "name": "Regen",
       "category": "Armory",
       "description": "Unlocks Regen Implants for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 3, "creditCost": 750, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 10 }], "effect": "Unlocks Regen V2 Implant" },
-        { "rank": 2, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 28 }, { "salvageId": "sparkleaf", "quantity": 14 }], "effect": "Unlocks Regen V3 Implant" },
-        { "rank": 3, "factionLevelRequired": 21, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 7 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "Unlocks Regen V4 Implant" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 3,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks Regen V2 Implant"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 10,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 28
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 14
+            }
+          ],
+          "effect": "Unlocks Regen V3 Implant"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 21,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "biolens_seed",
+              "quantity": 7
+            },
+            {
+              "salvageId": "neural_insulation",
+              "quantity": 3
+            }
+          ],
+          "effect": "Unlocks Regen V4 Implant"
+        }
       ]
     },
     {
@@ -112,11 +320,51 @@
       "name": "Null_Hazard.Exe",
       "category": "Stat",
       "description": "Hazard Tolerance increases your maximum data buffer protection, which is restored by using HEC consumables.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 4, "creditCost": 750, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 19 }], "effect": "Hazard Tolerance (+50)" },
-        { "rank": 2, "factionLevelRequired": 14, "creditCost": 1500, "salvage": [{ "salvageId": "sterilized_biostripping", "quantity": 5 }, { "salvageId": "sparkleaf", "quantity": 12 }], "effect": "Hazard Tolerance (+50)" },
-        { "rank": 3, "factionLevelRequired": 21, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 5 }, { "salvageId": "tarax_seed", "quantity": 7 }], "effect": "Reduced tick, lightning, and Heat Cascade damage" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 4,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 19
+            }
+          ],
+          "effect": "Hazard Tolerance (+50)"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 14,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "sterilized_biostripping",
+              "quantity": 5
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 12
+            }
+          ],
+          "effect": "Hazard Tolerance (+50)"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 21,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "biolens_seed",
+              "quantity": 5
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 7
+            }
+          ],
+          "effect": "Reduced tick, lightning, and Heat Cascade damage"
+        }
       ]
     },
     {
@@ -124,11 +372,51 @@
       "name": "Reinforce.Exe",
       "category": "Stat",
       "description": "Hardware reduces the duration of negative status effects that debilitate your Runner's physical chassis (Frost, Immobilize, Slow).",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 6, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 8 }, { "salvageId": "unstable_biomass", "quantity": 9 }], "effect": "Hardware (+20)" },
-        { "rank": 2, "factionLevelRequired": 16, "creditCost": 2000, "salvage": [{ "salvageId": "sterilized_biostripping", "quantity": 7 }, { "salvageId": "sparkleaf", "quantity": 25 }], "effect": "Hardware (+20)" },
-        { "rank": 3, "factionLevelRequired": 26, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }], "effect": "Hardware (+20)" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 6,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 8
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 9
+            }
+          ],
+          "effect": "Hardware (+20)"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 16,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "sterilized_biostripping",
+              "quantity": 7
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 25
+            }
+          ],
+          "effect": "Hardware (+20)"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 26,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 2
+            }
+          ],
+          "effect": "Hardware (+20)"
+        }
       ]
     },
     {
@@ -136,11 +424,55 @@
       "name": "Unfazed.Exe",
       "category": "Stat",
       "description": "Firewall reduces the duration of status effects that degrade your Runner's electronic systems (EMP, Hack).",
-      "prerequisites": ["reinforce_exe"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 7, "creditCost": 1500, "salvage": [{ "salvageId": "dermachem_pack", "quantity": 7 }, { "salvageId": "unstable_biomass", "quantity": 7 }], "effect": "Firewall (+20)" },
-        { "rank": 2, "factionLevelRequired": 18, "creditCost": 2000, "salvage": [{ "salvageId": "neurochem_pack", "quantity": 8 }, { "salvageId": "tarax_seed", "quantity": 5 }], "effect": "Firewall (+20)" },
-        { "rank": 3, "factionLevelRequired": 27, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }, { "salvageId": "tarax_seed", "quantity": 9 }], "effect": "Firewall (+20)" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 7,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "dermachem_pack",
+              "quantity": 7
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 7
+            }
+          ],
+          "effect": "Firewall (+20)"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 18,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "neurochem_pack",
+              "quantity": 8
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 5
+            }
+          ],
+          "effect": "Firewall (+20)"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 27,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 2
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 9
+            }
+          ],
+          "effect": "Firewall (+20)"
+        }
       ]
     },
     {
@@ -148,9 +480,23 @@
       "name": "Resist Comm",
       "category": "Function",
       "description": "NuCaloric standard contracts will now award Mechanic's Kits or OS Reboots in addition to other rewards.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 22, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 9 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "Mechanic's Kits/OS Reboots from NuCal contracts" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 22,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "biolens_seed",
+              "quantity": 9
+            },
+            {
+              "salvageId": "neural_insulation",
+              "quantity": 3
+            }
+          ],
+          "effect": "Mechanic's Kits/OS Reboots from NuCal contracts"
+        }
       ]
     },
     {
@@ -158,11 +504,55 @@
       "name": "Recovery.Exe",
       "category": "Stat",
       "description": "Self-Repair Speed increases how quickly your consumables restore missing health or shields.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 9, "creditCost": 1500, "salvage": [{ "salvageId": "dermachem_pack", "quantity": 10 }, { "salvageId": "unstable_biomass", "quantity": 13 }], "effect": "Self-Repair Speed (+20)" },
-        { "rank": 2, "factionLevelRequired": 19, "creditCost": 2000, "salvage": [{ "salvageId": "neurochem_pack", "quantity": 10 }, { "salvageId": "tarax_seed", "quantity": 6 }], "effect": "Self-Repair Speed (+20)" },
-        { "rank": 3, "factionLevelRequired": 29, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 3 }, { "salvageId": "enzyme_replicator", "quantity": 3 }], "effect": "Self-Repair Speed (+20)" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 9,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "dermachem_pack",
+              "quantity": 10
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 13
+            }
+          ],
+          "effect": "Self-Repair Speed (+20)"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 19,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "neurochem_pack",
+              "quantity": 10
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 6
+            }
+          ],
+          "effect": "Self-Repair Speed (+20)"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 29,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 3
+            },
+            {
+              "salvageId": "enzyme_replicator",
+              "quantity": 3
+            }
+          ],
+          "effect": "Self-Repair Speed (+20)"
+        }
       ]
     },
     {
@@ -170,10 +560,39 @@
       "name": "Advanced MCH",
       "category": "Armory",
       "description": "Unlocks Advanced Mechanic's Kits for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 6, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 8 }, { "salvageId": "unstable_biomass", "quantity": 9 }], "effect": "Unlocks Advanced Mechanic's Kits" },
-        { "rank": 2, "factionLevelRequired": 7, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 10 }, { "salvageId": "unstable_biomass", "quantity": 10 }], "effect": "Unlocks Advanced Mechanic's Kits" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 6,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 8
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 9
+            }
+          ],
+          "effect": "Unlocks Advanced Mechanic's Kits"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 7,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 10
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks Advanced Mechanic's Kits"
+        }
       ]
     },
     {
@@ -181,11 +600,51 @@
       "name": "Helping Hands",
       "category": "Armory",
       "description": "Unlocks Helping Hands Implants for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 2, "creditCost": 750, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 10 }], "effect": "Unlocks Helping Hands V2 Implant" },
-        { "rank": 2, "factionLevelRequired": 11, "creditCost": 1500, "salvage": [{ "salvageId": "dermachem_pack", "quantity": 18 }, { "salvageId": "sparkleaf", "quantity": 13 }], "effect": "Unlocks Helping Hands V3 Implant" },
-        { "rank": 3, "factionLevelRequired": 22, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 9 }, { "salvageId": "tarax_seed", "quantity": 14 }], "effect": "Unlocks Helping Hands V4 Implant" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 2,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks Helping Hands V2 Implant"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 11,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "dermachem_pack",
+              "quantity": 18
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 13
+            }
+          ],
+          "effect": "Unlocks Helping Hands V3 Implant"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 22,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "biolens_seed",
+              "quantity": 9
+            },
+            {
+              "salvageId": "tarax_seed",
+              "quantity": 14
+            }
+          ],
+          "effect": "Unlocks Helping Hands V4 Implant"
+        }
       ]
     },
     {
@@ -193,9 +652,23 @@
       "name": "Self-Revive",
       "category": "Armory",
       "description": "Unlocks Self-Revives for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 12, "creditCost": 1500, "salvage": [{ "salvageId": "neurochem_pack", "quantity": 4 }, { "salvageId": "sparkleaf", "quantity": 14 }], "effect": "Unlocks Self-Revives" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 12,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "neurochem_pack",
+              "quantity": 4
+            },
+            {
+              "salvageId": "sparkleaf",
+              "quantity": 14
+            }
+          ],
+          "effect": "Unlocks Self-Revives"
+        }
       ]
     },
     {
@@ -203,9 +676,23 @@
       "name": "Shielded",
       "category": "Armory",
       "description": "Unlocks Enhanced Shield Implants for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 5, "creditCost": 1500, "salvage": [{ "salvageId": "reclaimed_biostripping", "quantity": 12 }, { "salvageId": "unstable_biomass", "quantity": 13 }], "effect": "Unlocks Enhanced Shield Implants" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 5,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "reclaimed_biostripping",
+              "quantity": 12
+            },
+            {
+              "salvageId": "unstable_biomass",
+              "quantity": 13
+            }
+          ],
+          "effect": "Unlocks Enhanced Shield Implants"
+        }
       ]
     },
     {
@@ -213,9 +700,23 @@
       "name": "Armored",
       "category": "Armory",
       "description": "Unlocks Deluxe Shield Implants for purchase in the Armory.",
-      "prerequisites": ["shielded"],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 20, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 7 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "Unlocks Deluxe Shield Implants" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 20,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "biolens_seed",
+              "quantity": 7
+            },
+            {
+              "salvageId": "neural_insulation",
+              "quantity": 3
+            }
+          ],
+          "effect": "Unlocks Deluxe Shield Implants"
+        }
       ]
     },
     {
@@ -223,9 +724,23 @@
       "name": "Panacea Kit",
       "category": "Armory",
       "description": "Unlocks Panacea Kit for purchase in the Armory.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "factionLevelRequired": 25, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }, { "salvageId": "neural_insulation", "quantity": 7 }], "effect": "Unlocks Panacea Kit" }
+        {
+          "rank": 1,
+          "factionLevelRequired": 25,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 2
+            },
+            {
+              "salvageId": "neural_insulation",
+              "quantity": 7
+            }
+          ],
+          "effect": "Unlocks Panacea Kit"
+        }
       ]
     },
     {
@@ -233,9 +748,23 @@
       "name": "Field_Medic.Exe",
       "category": "Function",
       "description": "Health and shield consumables take less time to use.",
-      "prerequisites": [],
       "ranks": [
-        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 3 }, { "salvageId": "enzyme_replicator", "quantity": 8 }], "effect": "Faster consumable use" }
+        {
+          "rank": 1,
+          "vipRankRequired": 1,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "hazard_capsule",
+              "quantity": 3
+            },
+            {
+              "salvageId": "enzyme_replicator",
+              "quantity": 8
+            }
+          ],
+          "effect": "Faster consumable use"
+        }
       ]
     }
   ]
