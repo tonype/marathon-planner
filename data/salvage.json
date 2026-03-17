@@ -363,6 +363,20 @@
     "usage": ["CyberAcme Upgrades"]
   },
   {
+    "id": "drone_resin",
+    "name": "Drone Resin",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "A synthetic adhesive used in drone assembly.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] }
+      ],
+      "other": ["Container - Standard"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
     "id": "sterilized_biostripping",
     "name": "Sterilized Biostripping",
     "tier": "Enhanced",
