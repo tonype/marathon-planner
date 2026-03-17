@@ -1,0 +1,217 @@
+{
+  "id": "cyberacme",
+  "name": "CyberAcme",
+  "color": "#01d737",
+  "description": "Starter utility and vault growth.",
+  "agent": "ONI",
+  "capstones": [
+    { "level": 1, "name": "Bonus Pay", "nodesRequired": 6, "rankRequired": 0, "description": "CyberAcme standard contracts will now award increased credits upon completion." },
+    { "level": 2, "name": "Treasure Hunter", "nodesRequired": 12, "rankRequired": 0, "description": "CyAc Treasure Reputation (+20%)." },
+    { "level": 3, "name": "Sponsorship [CyberAcme]", "nodesRequired": 18, "rankRequired": 1, "description": "Unlocks CyberAcme Advanced Sponsored Kit for purchase in the Armory." },
+    { "level": 4, "name": "Stipend", "nodesRequired": 24, "rankRequired": 0, "description": "ROOK will now start runs with a small amount of credits in addition to their basic gear." },
+    { "level": 5, "name": "Max Looter", "nodesRequired": 30, "rankRequired": 0, "description": "Unlocks Superior Backpacks for purchase in the Armory." },
+    { "level": 6, "name": "(Rook) Carrier", "nodesRequired": 38, "rankRequired": 0, "description": "ROOK will now start runs with a Deluxe Backpack in addition to their basic gear." }
+  ],
+  "upgrades": [
+    {
+      "id": "expansion",
+      "name": "Expansion",
+      "category": "Inventory",
+      "description": "Gain additional rows of vault capacity for the rest of the current season.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 2500, "salvage": [{ "salvageId": "unstable_diode", "quantity": 12 }], "effect": "Vault Size (+8 Rows)" },
+        { "rank": 2, "factionLevelRequired": 7, "creditCost": 4000, "salvage": [{ "salvageId": "unstable_diode", "quantity": 22 }, { "salvageId": "unstable_gunmetal", "quantity": 12 }], "effect": "Vault Size (+8 Rows)" },
+        { "rank": 3, "factionLevelRequired": 12, "creditCost": 5000, "salvage": [{ "salvageId": "unstable_diode", "quantity": 27 }, { "salvageId": "unstable_gunmetal", "quantity": 15 }], "effect": "Vault Size (+6 Rows)" },
+        { "rank": 4, "factionLevelRequired": 18, "creditCost": 7000, "salvage": [{ "salvageId": "unstable_diode", "quantity": 30 }, { "salvageId": "unstable_gunmetal", "quantity": 18 }], "effect": "Vault Size (+4 Rows)" },
+        { "rank": 5, "factionLevelRequired": 28, "creditCost": 10000, "salvage": [{ "salvageId": "unstable_diode", "quantity": 50 }, { "salvageId": "unstable_gunmetal", "quantity": 30 }], "effect": "Vault Size (+4 Rows)" }
+      ]
+    },
+    {
+      "id": "carrier",
+      "name": "Carrier",
+      "category": "Armory",
+      "description": "Unlocks Enhanced Backpacks for purchase in the Armory.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 5, "creditCost": 1500, "salvage": [], "effect": "Unlocks Enhanced Backpacks" }
+      ]
+    },
+    {
+      "id": "carrier_plus",
+      "name": "Carrier+",
+      "category": "Armory",
+      "description": "Unlocks Deluxe Backpacks for purchase in the Armory.",
+      "prerequisites": ["carrier"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 15, "creditCost": 4000, "salvage": [], "effect": "Unlocks Deluxe Backpacks" }
+      ]
+    },
+    {
+      "id": "enhanced_weaponry",
+      "name": "Enhanced Weaponry",
+      "category": "Armory",
+      "description": "Unlocks Enhanced Overrun AR, V11 Punch, and CE Tactical Sidearm for purchase from CyberAcme.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 2500, "salvage": [], "effect": "Unlocks Enhanced weapons" }
+      ]
+    },
+    {
+      "id": "deluxe_weaponry",
+      "name": "Deluxe Weaponry",
+      "category": "Armory",
+      "description": "Unlocks Deluxe Overrun AR, V11 Punch, and CE Tactical Sidearm for purchase in the CyberAcme Market.",
+      "prerequisites": ["enhanced_weaponry"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 14, "creditCost": 4000, "salvage": [], "effect": "Unlocks Deluxe weapons" }
+      ]
+    },
+    {
+      "id": "locksmith",
+      "name": "Locksmith",
+      "category": "Armory",
+      "description": "Unlocks Lockbox Key for purchase in the Armory.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 2500, "salvage": [], "effect": "Unlocks Lockbox Key", "titleOverride": "Locksmith" },
+        { "rank": 2, "factionLevelRequired": 16, "creditCost": 4000, "salvage": [], "effect": "Unlocks Deluxe Key Template", "titleOverride": "Keymaker" },
+        { "rank": 3, "factionLevelRequired": 28, "creditCost": 7000, "salvage": [], "effect": "Unlocks Superior Key Template", "titleOverride": "Keymaker+" }
+      ]
+    },
+    {
+      "id": "firm_stance_exe",
+      "name": "Firm_Stance.Exe",
+      "category": "Stat",
+      "description": "Fall Resistance reduces the amount of damage you take after falling.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [], "effect": "Fall Resistance (+20)" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 4000, "salvage": [], "effect": "Fall Resistance (+20)" },
+        { "rank": 3, "factionLevelRequired": 26, "creditCost": 5000, "salvage": [], "effect": "Fall Resistance (+20)" }
+      ]
+    },
+    {
+      "id": "scavenger_exe",
+      "name": "Scavenger.Exe",
+      "category": "Stat",
+      "description": "Loot Speed increases how quickly items are revealed when looting containers.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [], "effect": "Loot Speed (+20)" },
+        { "rank": 2, "factionLevelRequired": 4, "creditCost": 2500, "salvage": [], "effect": "Loot Speed (+20)" },
+        { "rank": 3, "factionLevelRequired": 16, "creditCost": 4000, "salvage": [], "effect": "Loot Speed (+20)" }
+      ]
+    },
+    {
+      "id": "heat_sink_exe",
+      "name": "Heat_Sink.Exe",
+      "category": "Stat",
+      "description": "Heat Capacity increases the number of movement actions (sprinting, sliding) you can perform before overheating.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 2500, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 12 }], "effect": "Heat Capacity (+20)" },
+        { "rank": 2, "factionLevelRequired": 12, "creditCost": 3500, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 24 }, { "salvageId": "unstable_lead", "quantity": 12 }], "effect": "Heat Capacity (+20)" },
+        { "rank": 3, "factionLevelRequired": 26, "creditCost": 5000, "salvage": [{ "salvageId": "unstable_biomass", "quantity": 30 }, { "salvageId": "unstable_lead", "quantity": 20 }], "effect": "Heat Capacity (+20)" }
+      ]
+    },
+    {
+      "id": "quick_vent_exe",
+      "name": "Quick_Vent.Exe",
+      "category": "Stat",
+      "description": "Your heat recovery begins more quickly after actions that generate heat.",
+      "prerequisites": ["heat_sink_exe"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 2500, "salvage": [{ "salvageId": "unstable_gel", "quantity": 8 }], "effect": "Heat Recovery Speed (-20)" },
+        { "rank": 2, "factionLevelRequired": 19, "creditCost": 4000, "salvage": [{ "salvageId": "unstable_gel", "quantity": 16 }], "effect": "Heat Recovery Speed (-20)" }
+      ]
+    },
+    {
+      "id": "active_cool_exe",
+      "name": "Active_Cool.Exe",
+      "category": "Stat",
+      "description": "Your generated heat recovers more quickly.",
+      "prerequisites": ["quick_vent_exe"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 13, "creditCost": 3500, "salvage": [{ "salvageId": "unstable_gel", "quantity": 24 }], "effect": "Heat Recovery Rate (+15%)" },
+        { "rank": 2, "factionLevelRequired": 23, "creditCost": 5000, "salvage": [{ "salvageId": "unstable_gel", "quantity": 30 }], "effect": "Heat Recovery Rate (+15%)" }
+      ]
+    },
+    {
+      "id": "informant_exe",
+      "name": "Informant.Exe",
+      "category": "Function",
+      "description": "Increases data card credit rewards by 50%. This bonus additively stacks with other Informant upgrades.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 2, "creditCost": 1500, "salvage": [], "effect": "Data Card Credit Value (+50%)" },
+        { "rank": 2, "factionLevelRequired": 15, "creditCost": 2000, "salvage": [], "effect": "Data Card Credit Value (+50%)" }
+      ]
+    },
+    {
+      "id": "credit_limit",
+      "name": "Credit Limit",
+      "category": "Inventory",
+      "description": "Raises your credit wallet's capacity for the rest of the season.",
+      "prerequisites": ["informant_exe"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 2500, "salvage": [], "effect": "Credit Wallet Capacity (+20k)" },
+        { "rank": 2, "factionLevelRequired": 8, "creditCost": 4000, "salvage": [], "effect": "Credit Wallet Capacity (+50k)" },
+        { "rank": 3, "factionLevelRequired": 12, "creditCost": 7000, "salvage": [], "effect": "Credit Wallet Capacity (+200k)" },
+        { "rank": 4, "factionLevelRequired": 18, "creditCost": 10000, "salvage": [], "effect": "Credit Wallet Capacity (+700k)" },
+        { "rank": 5, "factionLevelRequired": 25, "creditCost": 50000, "salvage": [], "effect": "Credit Wallet Capacity (+9000k)" }
+      ]
+    },
+    {
+      "id": "loot_siphon_exe",
+      "name": "Loot_Siphon.Exe",
+      "category": "Stat",
+      "description": "Grants bonus tactical ability energy when opening an unlooted container.",
+      "prerequisites": ["scavenger_exe"],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 7, "creditCost": 1500, "salvage": [], "effect": "Tactical Energy on Container Loot (+5%)" },
+        { "rank": 2, "factionLevelRequired": 17, "creditCost": 4000, "salvage": [], "effect": "Tactical Energy on Container Loot (+5%)" }
+      ]
+    },
+    {
+      "id": "loose_change_exe",
+      "name": "Loose_Change.Exe",
+      "category": "Function",
+      "description": "Opening a container rewards you with 25 credits.",
+      "prerequisites": ["loot_siphon_exe"],
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [], "effect": "25 credits per container" }
+      ]
+    },
+    {
+      "id": "soundproof_exe",
+      "name": "Soundproof.Exe",
+      "category": "Function",
+      "description": "You make less noise while looting.",
+      "prerequisites": ["loot_siphon_exe"],
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [], "effect": "Reduced looting noise" }
+      ]
+    },
+    {
+      "id": "slider_exe",
+      "name": "Slider.Exe",
+      "category": "Function",
+      "description": "Your sprint slide generates less heat.",
+      "prerequisites": ["active_cool_exe"],
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 7000, "salvage": [], "effect": "Reduced slide heat" }
+      ]
+    },
+    {
+      "id": "fixative_exe",
+      "name": "Fixative.Exe",
+      "category": "Function",
+      "description": "ROOK gains an increased chance of finding Matter Fixatives when defeating UESC.",
+      "prerequisites": [],
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 25, "creditCost": 3500, "salvage": [], "effect": "Increased Matter Fixative drop chance" }
+      ]
+    }
+  ]
+}
