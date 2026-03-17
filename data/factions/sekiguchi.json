@@ -1,0 +1,241 @@
+{
+  "id": "sekiguchi",
+  "name": "Sekiguchi Genetics",
+  "color": "#cfb72f",
+  "description": "Runner shells, cores, and biomata-related power.",
+  "agent": "Clio",
+  "capstones": [
+    { "level": 1, "name": "Specialized", "nodesRequired": 5, "rankRequired": 0, "description": "ROOK will now start runs with Runner Cores. Sekiguchi will now barter their wares for certain Deluxe Salvage." },
+    { "level": 2, "name": "Treasure Hunter", "nodesRequired": 10, "rankRequired": 0, "description": "SekGen Treasure Reputation (+20%)." },
+    { "level": 3, "name": "Sponsorship [Sekiguchi]", "nodesRequired": 15, "rankRequired": 0, "description": "Unlocks Sekiguchi Advanced Sponsored Kit for purchase in the Armory. Sekiguchi will now barter their wares for certain Superior Salvage." },
+    { "level": 4, "name": "Commission", "nodesRequired": 20, "rankRequired": 0, "description": "Sekiguchi standard contracts will now award Cores in addition to other rewards." },
+    { "level": 5, "name": "QUIET_EXIT.EXE", "nodesRequired": 25, "rankRequired": 0, "description": "ROOK gains the effects of Signal Mask after activating an exfil." },
+    { "level": 6, "name": "Core All", "nodesRequired": 32, "rankRequired": 0, "description": "Unlocks Superior cores for each Runner in the Armory. Sekiguchi will now barter their wares for certain Prestige Salvage." }
+  ],
+  "upgrades": [
+    {
+      "id": "energy_amp",
+      "name": "Energy Amp",
+      "category": "Armory",
+      "description": "Unlocks Energy Amps for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [{ "salvageId": "unstable_diode", "quantity": 10 }], "effect": "Unlocks Energy Amps" }
+      ]
+    },
+    {
+      "id": "tac_amp_exe",
+      "name": "Tac_Amp.Exe",
+      "category": "Stat",
+      "description": "Tactical Recovery reduces the cooldown of your tactical and trait abilities.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 2, "creditCost": 750, "salvage": [{ "salvageId": "unstable_diode", "quantity": 16 }], "effect": "Tactical Recovery (+30)" },
+        { "rank": 2, "factionLevelRequired": 14, "creditCost": 2000, "salvage": [{ "salvageId": "paradox_circuit", "quantity": 8 }, { "salvageId": "storage_drive", "quantity": 30 }], "effect": "Tactical Recovery (+30)" }
+      ]
+    },
+    {
+      "id": "triage",
+      "name": "Triage",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Triage in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "storage_drive", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Triage cores" }
+      ]
+    },
+    {
+      "id": "destroyer",
+      "name": "Destroyer",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Destroyer in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Destroyer cores" }
+      ]
+    },
+    {
+      "id": "assassin",
+      "name": "Assassin",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Assassin in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "storage_drive", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Assassin cores" }
+      ]
+    },
+    {
+      "id": "vandal",
+      "name": "Vandal",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Vandal in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Vandal cores" }
+      ]
+    },
+    {
+      "id": "recon",
+      "name": "Recon",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Recon in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "storage_drive", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Recon cores" }
+      ]
+    },
+    {
+      "id": "thief",
+      "name": "Thief",
+      "category": "Armory",
+      "description": "Unlocks 2 Enhanced cores for Thief in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 8 }, { "salvageId": "unstable_diode", "quantity": 9 }], "effect": "Unlocks Enhanced Thief cores" }
+      ]
+    },
+    {
+      "id": "harvester",
+      "name": "Harvester",
+      "category": "Armory",
+      "description": "Unlocks Energy Harvesting implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 1500, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 7 }, { "salvageId": "unstable_diode", "quantity": 6 }], "effect": "Unlocks Energy Harvesting V2 Implant", "titleOverride": "Harvester" },
+        { "rank": 2, "factionLevelRequired": 9, "creditCost": 2000, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 23 }, { "salvageId": "storage_drive", "quantity": 8 }], "effect": "Unlocks Energy Harvesting V3 Implant", "titleOverride": "Harvester+" },
+        { "rank": 3, "factionLevelRequired": 23, "creditCost": 3500, "salvage": [{ "salvageId": "neural_insulation", "quantity": 7 }, { "salvageId": "predictive_framework", "quantity": 3 }], "effect": "Unlocks Energy Harvesting V4 Implant", "titleOverride": "Harvester++" }
+      ]
+    },
+    {
+      "id": "head_start_exe",
+      "name": "Head_Start.Exe",
+      "category": "Function",
+      "description": "Partially fills your tactical ability charge at the start of a run.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 1500, "salvage": [{ "salvageId": "storage_drive", "quantity": 10 }, { "salvageId": "unstable_diode", "quantity": 10 }], "effect": "Partial tactical ability charge on run start" },
+        { "rank": 2, "factionLevelRequired": 14, "creditCost": 2000, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 7 }, { "salvageId": "fractal_circuit", "quantity": 20 }], "effect": "Full tactical ability charge on run start" }
+      ]
+    },
+    {
+      "id": "capacitors",
+      "name": "Capacitors",
+      "category": "Armory",
+      "description": "Unlocks Augmented Capacitors implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 5, "creditCost": 1500, "salvage": [{ "salvageId": "storage_drive", "quantity": 10 }, { "salvageId": "unstable_diode", "quantity": 10 }], "effect": "Unlocks Augmented Capacitors V2 Implant", "titleOverride": "Capacitors" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 2000, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 8 }, { "salvageId": "fractal_circuit", "quantity": 13 }], "effect": "Unlocks Augmented Capacitors V3 Implant", "titleOverride": "Capacitors+" },
+        { "rank": 3, "factionLevelRequired": 24, "creditCost": 3500, "salvage": [{ "salvageId": "predictive_framework", "quantity": 9 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "Unlocks Augmented Capacitors V4 Implant", "titleOverride": "Capacitors++" }
+      ]
+    },
+    {
+      "id": "amped",
+      "name": "Amped",
+      "category": "Armory",
+      "description": "Unlocks daily free Energy Amps in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "fractal_circuit", "quantity": 23 }, { "salvageId": "storage_drive", "quantity": 9 }], "effect": "Free Daily Energy Amps in the Armory" }
+      ]
+    },
+    {
+      "id": "triage_plus",
+      "name": "Triage+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Triage in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 4 }, { "salvageId": "fractal_circuit", "quantity": 8 }], "effect": "Unlocks Deluxe Triage cores" }
+      ]
+    },
+    {
+      "id": "destroyer_plus",
+      "name": "Destroyer+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Destroyer in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "paradox_circuit", "quantity": 4 }, { "salvageId": "storage_drive", "quantity": 8 }], "effect": "Unlocks Deluxe Destroyer cores" }
+      ]
+    },
+    {
+      "id": "assassin_plus",
+      "name": "Assassin+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Assassin in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 4 }, { "salvageId": "fractal_circuit", "quantity": 8 }], "effect": "Unlocks Deluxe Assassin cores" }
+      ]
+    },
+    {
+      "id": "vandal_plus",
+      "name": "Vandal+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Vandal in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "paradox_circuit", "quantity": 4 }, { "salvageId": "storage_drive", "quantity": 8 }], "effect": "Unlocks Deluxe Vandal cores" }
+      ]
+    },
+    {
+      "id": "recon_plus",
+      "name": "Recon+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Recon in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 4 }, { "salvageId": "fractal_circuit", "quantity": 8 }], "effect": "Unlocks Deluxe Recon cores" }
+      ]
+    },
+    {
+      "id": "thief_plus",
+      "name": "Thief+",
+      "category": "Armory",
+      "description": "Unlocks 2 Deluxe cores for Thief in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "paradox_circuit", "quantity": 4 }, { "salvageId": "storage_drive", "quantity": 8 }], "effect": "Unlocks Deluxe Thief cores" }
+      ]
+    },
+    {
+      "id": "scab_factory_exe",
+      "name": "Scab_Factory.Exe",
+      "category": "Stat",
+      "description": "Increases the time it takes to bleed out when downed.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 13, "creditCost": 2000, "salvage": [{ "salvageId": "amygdala_drive", "quantity": 7 }, { "salvageId": "fractal_circuit", "quantity": 20 }], "effect": "DBNO Time (+30s)" }
+      ]
+    },
+    {
+      "id": "scab_factory_exe_plus",
+      "name": "Scab_Factory_Exe+",
+      "category": "Stat",
+      "description": "Increases the time it takes to bleed out when downed.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 23, "creditCost": 3500, "salvage": [{ "salvageId": "predictive_framework", "quantity": 9 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "DBNO Time (+30s)" }
+      ]
+    },
+    {
+      "id": "amp_stock",
+      "name": "Amp Stock",
+      "category": "Armory",
+      "description": "Increases available stock of Energy Amps in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 21, "creditCost": 2000, "salvage": [{ "salvageId": "paradox_circuit", "quantity": 12 }, { "salvageId": "amygdala_drive", "quantity": 5 }], "effect": "Energy Amp Stock increase" }
+      ]
+    },
+    {
+      "id": "prime_amp_exe",
+      "name": "Prime_Amp.Exe",
+      "category": "Stat",
+      "description": "Prime Recovery reduces the cooldown of your prime ability.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 24, "creditCost": 5000, "salvage": [{ "salvageId": "synapse_cube", "quantity": 2 }], "effect": "Prime Recovery (+30)" },
+        { "rank": 2, "factionLevelRequired": 28, "creditCost": 5000, "salvage": [{ "salvageId": "synapse_cube", "quantity": 3 }, { "salvageId": "predictive_framework", "quantity": 3 }], "effect": "Prime Recovery (+30)" }
+      ]
+    },
+    {
+      "id": "lethal_amp_exe",
+      "name": "Lethal_Amp.Exe",
+      "category": "Function",
+      "description": "Downing a Runner grants you tactical ability energy. Eliminating a Runner grants you prime ability energy.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 25, "creditCost": 3500, "salvage": [{ "salvageId": "predictive_framework", "quantity": 7 }, { "salvageId": "neural_insulation", "quantity": 3 }], "effect": "Ability energy on Runner kills" }
+      ]
+    },
+    {
+      "id": "primed_exe",
+      "name": "Primed.Exe",
+      "category": "Function",
+      "description": "Partially fills your prime ability charge at the start of a run.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 26, "creditCost": 5000, "salvage": [{ "salvageId": "alien_alloy", "quantity": 2 }, { "salvageId": "neural_insulation", "quantity": 7 }], "effect": "Partial prime ability charge on run start" },
+        { "rank": 2, "vipRankRequired": 1, "creditCost": 5000, "salvage": [{ "salvageId": "alien_alloy", "quantity": 3 }, { "salvageId": "neural_insulation", "quantity": 11 }], "effect": "Full prime ability charge on run start" }
+      ]
+    }
+  ]
+}
