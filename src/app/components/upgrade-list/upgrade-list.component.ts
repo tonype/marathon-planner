@@ -10,6 +10,15 @@ type FilterCategory = 'All' | 'Inventory' | 'Function' | 'Stat' | 'Armory';
   imports: [FormsModule],
   template: `
     <div class="flex flex-col h-full">
+      <!-- Faction image -->
+      <div class="flex justify-center p-4 border-b border-surface-3">
+        <img
+          [src]="'assets/images/factions/' + factionId() + '.png'"
+          [alt]="factionId()"
+          class="w-24 h-24 rounded-lg object-cover"
+        />
+      </div>
+
       <!-- Search -->
       <div class="p-3 border-b border-surface-3">
         <input
@@ -71,6 +80,7 @@ type FilterCategory = 'All' | 'Inventory' | 'Function' | 'Stat' | 'Armory';
 })
 export class UpgradeListComponent {
   upgrades = input.required<Upgrade[]>();
+  factionId = input<string>('');
   selectedUpgradeId = input<string | null>(null);
   factionColor = input<string>('#888');
   wantedUpgradeIds = input<Set<string>>(new Set());

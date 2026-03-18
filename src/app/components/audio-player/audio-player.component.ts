@@ -126,6 +126,8 @@ export class AudioPlayerComponent implements OnDestroy {
   private playerContainer = viewChild<ElementRef<HTMLDivElement>>('playerContainer');
   private player: any = null;
   private apiReady = false;
+  private hasInteracted = false;
+  private interactionListener: (() => void) | null = null;
 
   playlist = [...PLAYLIST];
   expanded = signal(false);
@@ -144,13 +146,30 @@ export class AudioPlayerComponent implements OnDestroy {
       const j = 1 + Math.floor(Math.random() * i);
       [this.playlist[i], this.playlist[j]] = [this.playlist[j], this.playlist[i]];
     }
-    afterNextRender(() => this.loadYouTubeApi());
+    afterNextRender(() => {
+      this.loadYouTubeApi();
+      this.registerInteractionListener();
+    });
+  }
+
+  private registerInteractionListener() {
+    this.interactionListener = () => {
+      if (!this.hasInteracted) {
+        this.hasInteracted = true;
+        // Start playback on first interaction if not already playing
+        if (!this.isPlaying() && this.apiReady) {
+          this.playTrack(0);
+        }
+      }
+      document.removeEventListener('click', this.interactionListener!);
+      this.interactionListener = null;
+    };
+    document.addEventListener('click', this.interactionListener);
   }
 
   private loadYouTubeApi() {
     if ((window as any).YT?.Player) {
       this.apiReady = true;
-      this.playTrack(0);
       return;
     }
 
@@ -160,10 +179,8 @@ export class AudioPlayerComponent implements OnDestroy {
 
     (window as any).onYouTubeIframeAPIReady = () => {
       this.apiReady = true;
-      // Auto-start first track on load
-      if (this.currentIndex() >= 0) {
-        this.initPlayer(this.playlist[this.currentIndex()].videoId);
-      } else {
+      // If user already clicked before API loaded, start now
+      if (this.hasInteracted) {
         this.playTrack(0);
       }
     };
@@ -196,6 +213,7 @@ export class AudioPlayerComponent implements OnDestroy {
       events: {
         onReady: (event: any) => {
           event.target.setVolume(this.volume());
+          event.target.playVideo();
         },
         onStateChange: (event: any) => {
           // 0 = ended, 1 = playing, 2 = paused
@@ -263,5 +281,8 @@ export class AudioPlayerComponent implements OnDestroy {
 
   ngOnDestroy() {
     this.player?.destroy();
+    if (this.interactionListener) {
+      document.removeEventListener('click', this.interactionListener);
+    }
   }
 }

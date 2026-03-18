@@ -51,6 +51,7 @@
         <div class="w-80 min-w-80 border-r border-surface-3 bg-surface-0">
           @if (activeFaction(); as faction) {
             <app-upgrade-list
+              [factionId]="activeFactionId()"
               [upgrades]="faction.upgrades"
               [selectedUpgradeId]="selectedUpgradeId()"
               [factionColor]="faction.color"
