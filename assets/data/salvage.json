@@ -1,0 +1,818 @@
+[
+  {
+    "id": "alien_alloy",
+    "name": "Alien Alloy",
+    "tier": "Prestige",
+    "price": 2500,
+    "description": "An unusual material with metallic and biological properties.",
+    "sources": {
+      "maps": [{ "mapId": "cryo_archive", "zones": [] }],
+      "other": ["Locked Rooms [Prestige]"]
+    },
+    "usage": ["MIDA Upgrades"]
+  },
+  {
+    "id": "hazard_capsule",
+    "name": "Hazard Capsule",
+    "tier": "Prestige",
+    "price": 2500,
+    "description": "A hermetically sealed container filled with an extremely volatile substance.",
+    "sources": {
+      "maps": [{ "mapId": "cryo_archive", "zones": [] }],
+      "other": ["Locked Rooms [Prestige]"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "synapse_cube",
+    "name": "Synapse Cube",
+    "tier": "Prestige",
+    "price": 2500,
+    "description": "Essential for integrating the electrical signals within a cyborg shell.",
+    "sources": {
+      "maps": [{ "mapId": "cryo_archive", "zones": [] }],
+      "other": ["Locked Rooms [Prestige]"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "biogenic_alloy",
+    "name": "Biogenic Alloy",
+    "tier": "Superior",
+    "price": 2500,
+    "description": "Used for Traxus upgrades.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion", "UESC Intercept", "Locked Rooms"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "biofilament",
+    "name": "Biofilament",
+    "tier": "Superior",
+    "price": 1000,
+    "description": "Used for NuCaloric upgrades.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "coherence_drive",
+    "name": "Coherence Drive",
+    "tier": "Superior",
+    "price": 1000,
+    "description": "Located in UESC Incursion and Locked Rooms.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion", "Locked Rooms"]
+    },
+    "usage": []
+  },
+  {
+    "id": "liquid_explosive",
+    "name": "Liquid Explosive",
+    "tier": "Superior",
+    "price": 1000,
+    "description": "Located in UESC Incursion, UESC Intercept, and Locked Rooms.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion", "UESC Intercept", "Locked Rooms"]
+    },
+    "usage": []
+  },
+  {
+    "id": "papaver_bloom",
+    "name": "Papaver Bloom",
+    "tier": "Superior",
+    "price": 1000,
+    "description": "This hybridized flowering plant was an early escapee from Dire Marsh greenhouses.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion", "Locked Rooms", "Grassy Areas"]
+    },
+    "usage": []
+  },
+  {
+    "id": "ballistic_turbine",
+    "name": "Ballistic Turbine",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "A positive displacement turbine alternative.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["complex", "maintenance"] },
+        { "mapId": "outpost", "zones": ["airfield"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["Traxus Upgrades", "MIDA Upgrades"]
+  },
+  {
+    "id": "biolens_seed",
+    "name": "Biolens Seed",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "Organic focusing medium used in the construction of biological lasers.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["overflow"] },
+        { "mapId": "dire_marsh", "zones": ["quarantine", "greenhouse"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "MIDA Upgrades"]
+  },
+  {
+    "id": "enzyme_replicator",
+    "name": "Enzyme Replicator",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "Complex biological ecosystem capable of prolonging life.",
+    "sources": {
+      "maps": [
+        { "mapId": "outpost", "zones": ["orientation", "pinwheel_base", "processing"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "reflex_coil",
+    "name": "Reflex Coil",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "A spool of myelin-coated filament for use in biological synthetics.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["ai_uplink", "bio_research"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "Arachne Upgrades"]
+  },
+  {
+    "id": "nanotruss",
+    "name": "Nanotruss",
+    "tier": "Deluxe",
+    "price": 300,
+    "description": "Found in UESC Incursion locked rooms.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC Incursion", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "Traxus Upgrades"]
+  },
+  {
+    "id": "neural_insulation",
+    "name": "Neural Insulation",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "Specialized material for insulating neural processes during transfer.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["north_relay", "hauler"] },
+        { "mapId": "dire_marsh", "zones": ["algae_ponds"] },
+        { "mapId": "outpost", "zones": ["flight_control", "dormitories"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "Traxus Upgrades"]
+  },
+  {
+    "id": "predictive_framework",
+    "name": "Predictive Framework",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "Wiring capable of anticipating inputs before they happen.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station", "south_relay"] }
+      ],
+      "other": ["Lockdown Zones", "Locked Rooms [Superior+]"]
+    },
+    "usage": ["Traxus Upgrades", "Sekiguchi Upgrades"]
+  },
+  {
+    "id": "shell_id",
+    "name": "Shell ID",
+    "tier": "Deluxe",
+    "price": 1000,
+    "description": "Unique synth-vat identification for each biosynthetic Runner shell.",
+    "sources": {
+      "maps": [],
+      "other": ["Supply Drop", "Priority Hostiles"]
+    },
+    "usage": ["CyberAcme Market Access"]
+  },
+  {
+    "id": "amygdala_drive",
+    "name": "Amygdala Drive",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Advanced storage drive able to mimic biological memory response.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["south_relay"] }
+      ],
+      "other": ["Core Storage", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Sekiguchi Upgrades"]
+  },
+  {
+    "id": "anomalous_wire",
+    "name": "Anomalous Wire",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Wire exposed to Tau Ceti IV's anomalous energies, resulting in instantaneous data transfer.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station"] }
+      ],
+      "other": ["Munitions Crate", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "biomata_node",
+    "name": "Biomata Node",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "A cybernetic node from a biomata, containing unknown potential.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] }
+      ],
+      "other": ["Tool Cart", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "biomata_resin",
+    "name": "Biomata Resin",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "A powerful adhesive suitable for affixing living flesh to synthetic bone.",
+    "sources": {
+      "maps": [
+        { "mapId": "outpost", "zones": ["orientation", "pinwheel_base", "processing"] }
+      ],
+      "other": ["Tool Cart", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "cetinite_rods",
+    "name": "Cetinite Rods",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "Rods smelted from strange alloy the colonists harvested from Tau Ceti IV prior to their disappearance.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": [] }
+      ],
+      "other": ["Field Maintenance", "Arms Locker", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": []
+  },
+  {
+    "id": "dynamic_lens",
+    "name": "Dynamic Lens",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Uses multiple images to gather visual data.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["quarantine", "bio_research"] }
+      ],
+      "other": ["Bioprinter", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "Traxus Upgrades"]
+  },
+  {
+    "id": "nanozymes",
+    "name": "Nanozymes",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "Batches of artificial enzymes, each designed for a custom purpose.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] }
+      ],
+      "other": ["Field Maintenance", "Medical Cabinet", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["NuCaloric Upgrades", "Traxus Upgrades"]
+  },
+  {
+    "id": "neurochem_pack",
+    "name": "Neurochem Pack",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "Packet of neurological chemicals used to enhance biomata and other cyber-organic accessories.",
+    "sources": {
+      "maps": [
+        { "mapId": "outpost", "zones": ["pinwheel_base"] }
+      ],
+      "other": ["Medical Cabinet", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "paradox_circuit",
+    "name": "Paradox Circuit",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "A processor capable of creating a more powerful version of itself.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["north_relay"] },
+        { "mapId": "outpost", "zones": ["flight_control", "dormitories", "pinwheel_base"] }
+      ],
+      "other": ["Core Storage", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": []
+  },
+  {
+    "id": "polymer_wire",
+    "name": "Polymer Wire",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "Organic polymers grown for conductivity, and a frequent target of scavengers.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["hauler", "south_relay"] }
+      ],
+      "other": ["Munitions Crate", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "steel_rods",
+    "name": "Steel Rods",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "Megacorporations hope to replicate the colony's unorthodox method of steel recycling.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station", "hauler"] }
+      ],
+      "other": ["Arms Locker", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "drone_resin",
+    "name": "Drone Resin",
+    "tier": "Enhanced",
+    "price": 50,
+    "description": "A synthetic adhesive used in drone assembly.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] }
+      ],
+      "other": ["Container - Standard"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "sterilized_biostripping",
+    "name": "Sterilized Biostripping",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Advanced material made of reclaimed waste and treated with a powerful bioagent.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["hauler"] },
+        { "mapId": "dire_marsh", "zones": ["algae_ponds"] }
+      ],
+      "other": ["Arms Locker", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "tachyon_filament",
+    "name": "Tachyon Filament",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Filament that can form itself into intended arrangements of its own accord.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["ai_uplink"] }
+      ],
+      "other": ["Bioprinter", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "tarax_seed",
+    "name": "Tarax Seed",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Mildly toxic when eaten, but pharmaceuticals can be extracted from the seeds.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["overflow"] },
+        { "mapId": "dire_marsh", "zones": ["greenhouse"] }
+      ],
+      "other": ["Medical Cabinet", "Grassy Areas", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "thoughtwave_lens",
+    "name": "Thoughtwave Lens",
+    "tier": "Enhanced",
+    "price": 70,
+    "description": "Surveillance equipment able to record impressions of a subject's thoughts.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["quarantine"] }
+      ],
+      "other": ["Locked Rooms [Deluxe]"]
+    },
+    "usage": []
+  },
+  {
+    "id": "uesc_obedience_matrix",
+    "name": "UESC Obedience Matrix",
+    "tier": "Enhanced",
+    "price": 300,
+    "description": "Control unit for UESC ground troops. A faint rhythmic pulse can be felt when held.",
+    "sources": {
+      "maps": [],
+      "other": ["UESC", "Supply Drop", "Priority Hostiles"]
+    },
+    "usage": ["CyberAcme Market Access"]
+  },
+  {
+    "id": "volatile_compounds",
+    "name": "Volatile Compounds",
+    "tier": "Enhanced",
+    "price": 70,
+    "description": "Highly unpredictable chemicals in an ergonomic carrying case.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["complex"] },
+        { "mapId": "outpost", "zones": ["airfield", "pinwheel_base"] }
+      ],
+      "other": ["Locked Rooms [Deluxe]"]
+    },
+    "usage": ["MIDA Upgrades"]
+  },
+  {
+    "id": "altered_wire",
+    "name": "Altered Wire",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Wiring influenced by unknown energies, causing bursts of superconductive capacity.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station"] }
+      ],
+      "other": ["Munitions Crate", "Locked Rooms [Deluxe+]"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "dynamic_compounds",
+    "name": "Dynamic Compounds",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Found in Dire Marsh.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["complex"] }
+      ],
+      "other": []
+    },
+    "usage": []
+  },
+  {
+    "id": "aluminum_rods",
+    "name": "Aluminum Rods",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Basic structural material.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station", "hauler"] }
+      ],
+      "other": ["Arms Locker"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "basic_xerogel",
+    "name": "Basic Xerogel",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Gel material found in Dire Marsh.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["quarantine", "greenhouse"] }
+      ],
+      "other": ["Tool Cart"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "carbon_wire",
+    "name": "Carbon Wire",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Basic wiring material.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["hauler", "south_relay"] }
+      ],
+      "other": ["Munitions Crate"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "deimosite_rods",
+    "name": "Deimosite Rods",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Rods found in Dire Marsh.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["maintenance"] }
+      ],
+      "other": ["Arms Locker"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "dermachem_pack",
+    "name": "Dermachem Pack",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Chemical pack found at Outpost.",
+    "sources": {
+      "maps": [
+        { "mapId": "outpost", "zones": ["pinwheel_base"] }
+      ],
+      "other": ["Medical Cabinet"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "drone_node",
+    "name": "Drone Node",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Node from drones found at Outpost.",
+    "sources": {
+      "maps": [
+        { "mapId": "outpost", "zones": ["orientation", "pinwheel_base", "processing"] }
+      ],
+      "other": ["Tool Cart"]
+    },
+    "usage": ["Arachne Upgrades"]
+  },
+  {
+    "id": "epoxy_resin",
+    "name": "Epoxy Resin",
+    "tier": "Standard",
+    "price": 30,
+    "description": "A versatile colony-era synthetic resin.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["complex", "algae_ponds"] }
+      ],
+      "other": ["Tool Cart"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "fractal_circuit",
+    "name": "Fractal Circuit",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Digital processor able to exponentially increase speed and storage.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["north_relay"] },
+        { "mapId": "outpost", "zones": ["flight_control", "dormitories", "pinwheel_base"] }
+      ],
+      "other": ["Core Storage"]
+    },
+    "usage": ["Sekiguchi Upgrades"]
+  },
+  {
+    "id": "hydrocarbon_rubber",
+    "name": "Hydrocarbon Rubber",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Easily harvested from plant tissue, but prone to decomposition on Tau Ceti IV.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station", "overflow"] }
+      ],
+      "other": ["Arms Locker"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "nanocomposites",
+    "name": "Nanocomposites",
+    "tier": "Standard",
+    "price": 50,
+    "description": "The original colony mission would've been impossible without breakthroughs in microfabrication.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] }
+      ],
+      "other": ["Field Maintenance", "Medical Cabinet"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "plastic_filament",
+    "name": "Plastic Filament",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Ubiquitous whenever fabrication needs to be fast, cheap, and reliable.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["north_relay", "overflow"] }
+      ],
+      "other": ["Bioprinter"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "putty_explosive",
+    "name": "Putty Explosive",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Soft, moldable, and stable. Sometimes it's best to stick with the classics.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["complex"] }
+      ],
+      "other": ["Field Maintenance", "Munitions Crate"]
+    },
+    "usage": ["Traxus Upgrades"]
+  },
+  {
+    "id": "reclaimed_biostripping",
+    "name": "Reclaimed Biostripping",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Useful rubberlike material sourced from reclaimed biological waste.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["hauler"] },
+        { "mapId": "dire_marsh", "zones": ["algae_ponds"] }
+      ],
+      "other": ["Arms Locker"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "sparkleaf",
+    "name": "Sparkleaf",
+    "tier": "Standard",
+    "price": 50,
+    "description": "High in silica content, this plant is a valuable resource on Tau Ceti IV.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["overflow"] },
+        { "mapId": "dire_marsh", "zones": ["greenhouse"] }
+      ],
+      "other": ["Grassy Areas"]
+    },
+    "usage": ["CyberAcme Upgrades"]
+  },
+  {
+    "id": "storage_drive",
+    "name": "Storage Drive",
+    "tier": "Standard",
+    "price": 10,
+    "description": "A potential treasure trove of colony-era data.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["algae_ponds", "ai_uplink"] }
+      ],
+      "other": ["Core Storage"]
+    },
+    "usage": ["NuCaloric Upgrades"]
+  },
+  {
+    "id": "surveillance_lens",
+    "name": "Surveillance Lens",
+    "tier": "Standard",
+    "price": 50,
+    "description": "Restricted equipment used for high-risk military recon.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["quarantine"] }
+      ],
+      "other": ["Bioprinter"]
+    },
+    "usage": ["MIDA Upgrades"]
+  },
+  {
+    "id": "unstable_biomass",
+    "name": "Unstable Biomass",
+    "tier": "Standard",
+    "price": 10,
+    "description": "A sample of unidentifiable biomass that has molecularly destabilized.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["hauler", "overflow"] },
+        { "mapId": "dire_marsh", "zones": ["algae_ponds", "greenhouse"] }
+      ],
+      "other": []
+    },
+    "usage": ["CyberAcme Upgrades", "NuCaloric Upgrades"]
+  },
+  {
+    "id": "unstable_diode",
+    "name": "Unstable Diode",
+    "tier": "Standard",
+    "price": 10,
+    "description": "A diode that has molecularly destabilized.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["north_relay", "south_relay"] },
+        { "mapId": "outpost", "zones": ["flight_control", "dormitories"] }
+      ],
+      "other": []
+    },
+    "usage": ["CyberAcme Upgrades", "Sekiguchi Upgrades"]
+  },
+  {
+    "id": "unstable_gel",
+    "name": "Unstable Gel",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Resorcinol-formaldehyde gel that has molecularly destabilized.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["bio_research"] },
+        { "mapId": "outpost", "zones": ["orientation", "processing"] }
+      ],
+      "other": []
+    },
+    "usage": ["CyberAcme Upgrades", "Arachne Upgrades"]
+  },
+  {
+    "id": "unstable_gunmetal",
+    "name": "Unstable Gunmetal",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Gunmetal that has molecularly destabilized.",
+    "sources": {
+      "maps": [
+        { "mapId": "perimeter", "zones": ["station"] },
+        { "mapId": "dire_marsh", "zones": ["ai_uplink", "maintenance"] }
+      ],
+      "other": []
+    },
+    "usage": ["CyberAcme Upgrades", "Traxus Upgrades"]
+  },
+  {
+    "id": "unstable_lead",
+    "name": "Unstable Lead",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Lead that has molecularly destabilized.",
+    "sources": {
+      "maps": [
+        { "mapId": "dire_marsh", "zones": ["quarantine", "complex"] },
+        { "mapId": "outpost", "zones": ["airfield"] }
+      ],
+      "other": []
+    },
+    "usage": ["CyberAcme Upgrades", "MIDA Upgrades"]
+  },
+  {
+    "id": "data_card",
+    "name": "Data Card",
+    "tier": "Standard",
+    "price": 0,
+    "description": "Data card.",
+    "sources": {
+      "maps": [],
+      "other": []
+    },
+    "usage": []
+  },
+  {
+    "id": "weapon_parts",
+    "name": "Weapon Parts",
+    "tier": "Standard",
+    "price": 10,
+    "description": "Pieces of an indeterminate weapon.",
+    "sources": {
+      "maps": [],
+      "other": []
+    },
+    "usage": []
+  }
+]

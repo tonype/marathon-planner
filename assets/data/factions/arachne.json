@@ -1,0 +1,189 @@
+{
+  "id": "arachne",
+  "name": "Arachne",
+  "color": "#e30b0c",
+  "description": "Stronger PvP focus.",
+  "agent": "Loki",
+  "capstones": [
+    { "level": 1, "name": "Boosted", "nodesRequired": 5, "rankRequired": 0, "description": "ROOK will now start runs with Implants. Arachne will now barter their wares for certain Deluxe Salvage." },
+    { "level": 2, "name": "Treasure Hunter", "nodesRequired": 10, "rankRequired": 0, "description": "Arachne Treasure Reputation (+20%)." },
+    { "level": 3, "name": "Sponsorship [Arachne]", "nodesRequired": 15, "rankRequired": 1, "description": "Unlocks Arachne Advanced Sponsored Kit for purchase in the Armory. Arachne will now barter their wares for certain Superior Salvage." },
+    { "level": 4, "name": "Boomstick", "nodesRequired": 20, "rankRequired": 0, "description": "ROOK will now start runs with a WSTR Combat Shotgun and NIPS Rounds." },
+    { "level": 5, "name": "Factory_Reset.Exe", "nodesRequired": 25, "rankRequired": 0, "description": "Reviving a crew member grants healing over time. The healing is interrupted upon taking damage." },
+    { "level": 6, "name": "Superior Armament", "nodesRequired": 28, "rankRequired": 0, "description": "Unlocks Superior Retaliator LMG, WSTR Combat Shotgun, and ARES RG for purchase in the Armory. Arachne will now barter their wares for certain Prestige Salvage." }
+  ],
+  "upgrades": [
+    {
+      "id": "lmg_mods",
+      "name": "LMG MODS",
+      "category": "Armory",
+      "description": "Unlocks a set of Enhanced LMG mods from the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 13 }], "effect": "Unlocks Enhanced LMG mods" }
+      ]
+    },
+    {
+      "id": "hurting_hands",
+      "name": "Hurting Hands",
+      "category": "Armory",
+      "description": "Unlocks Hurting Hands implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 10 }], "effect": "Unlocks Hurting Hands V2 Implant" },
+        { "rank": 2, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "drone_node", "quantity": 19 }, { "salvageId": "drone_resin", "quantity": 9 }], "effect": "Unlocks Hurting Hands V3 Implant" },
+        { "rank": 3, "factionLevelRequired": 23, "creditCost": 3500, "salvage": [{ "salvageId": "enzyme_replicator", "quantity": 7 }, { "salvageId": "reflex_coil", "quantity": 3 }], "effect": "Unlocks Hurting Hands V4 Implant" }
+      ]
+    },
+    {
+      "id": "mips_railgun",
+      "name": "MIPS Railgun",
+      "category": "Armory",
+      "description": "Unlocks ARES RG for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 2, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 13 }], "effect": "Unlocks ARES RG" }
+      ]
+    },
+    {
+      "id": "shotgun_mods",
+      "name": "SHOTGUN MODS",
+      "category": "Armory",
+      "description": "Unlocks a set of Enhanced shotgun mods from the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 19 }], "effect": "Unlocks Enhanced shotgun mods" }
+      ]
+    },
+    {
+      "id": "railgun_mods",
+      "name": "RAILGUN MODS",
+      "category": "Armory",
+      "description": "Unlocks a set of Enhanced railgun mods from the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 1500, "salvage": [{ "salvageId": "drone_resin", "quantity": 8 }, { "salvageId": "unstable_gel", "quantity": 9 }], "effect": "Unlocks Enhanced railgun mods" }
+      ]
+    },
+    {
+      "id": "knife_fight",
+      "name": "KNIFE FIGHT",
+      "category": "Armory",
+      "description": "Unlocks Knife Fight implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 13 }], "effect": "Unlocks Knife Fight V2 Implant" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 1500, "salvage": [{ "salvageId": "drone_node", "quantity": 23 }, { "salvageId": "drone_resin", "quantity": 12 }], "effect": "Unlocks Knife Fight V3 Implant" },
+        { "rank": 3, "factionLevelRequired": 24, "creditCost": 3500, "salvage": [{ "salvageId": "enzyme_replicator", "quantity": 9 }, { "salvageId": "reflex_coil", "quantity": 3 }], "effect": "Unlocks Knife Fight V4 Implant" }
+      ]
+    },
+    {
+      "id": "hard_strike_exe",
+      "name": "HARD_STRIKE.EXE",
+      "category": "Stat",
+      "description": "Melee Damage increases the damage of your melee and knife attacks.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 5, "creditCost": 1500, "salvage": [{ "salvageId": "drone_resin", "quantity": 7 }, { "salvageId": "unstable_gel", "quantity": 6 }], "effect": "Melee Damage (+20)" },
+        { "rank": 2, "factionLevelRequired": 16, "creditCost": 2000, "salvage": [{ "salvageId": "biomata_resin", "quantity": 8 }, { "salvageId": "drone_node", "quantity": 22 }], "effect": "Melee Damage (+20)" },
+        { "rank": 3, "factionLevelRequired": 20, "creditCost": 3500, "salvage": [{ "salvageId": "reflex_coil", "quantity": 6 }, { "salvageId": "biomata_node", "quantity": 6 }], "effect": "Melee Damage (+20)" }
+      ]
+    },
+    {
+      "id": "cutthroat_exe",
+      "name": "CUTTHROAT.EXE",
+      "category": "Stat",
+      "description": "Finisher Siphon increases the amount your shields recharge after you perform a finisher on a downed Runner.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 6, "creditCost": 750, "salvage": [{ "salvageId": "unstable_gel", "quantity": 16 }], "effect": "Finisher Siphon (+20)" },
+        { "rank": 2, "factionLevelRequired": 18, "creditCost": 2000, "salvage": [{ "salvageId": "biomata_resin", "quantity": 12 }, { "salvageId": "biomata_node", "quantity": 4 }], "effect": "Finisher Siphon (+20)" },
+        { "rank": 3, "factionLevelRequired": 25, "creditCost": 3500, "salvage": [{ "salvageId": "reflex_coil", "quantity": 7 }, { "salvageId": "enzyme_replicator", "quantity": 3 }], "effect": "Finisher Siphon (+20)" }
+      ]
+    },
+    {
+      "id": "mips_shotgun",
+      "name": "MIPS Shotgun",
+      "category": "Armory",
+      "description": "Unlocks WSTR Combat Shotgun for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 7, "creditCost": 1500, "salvage": [{ "salvageId": "drone_node", "quantity": 7 }, { "salvageId": "unstable_gel", "quantity": 8 }], "effect": "Unlocks WSTR Combat Shotgun" }
+      ]
+    },
+    {
+      "id": "reboot_exe",
+      "name": "Reboot.Exe",
+      "category": "Stat",
+      "description": "Revive Speed increases how quickly you can self-revive or revive downed crew members.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 7, "creditCost": 1500, "salvage": [{ "salvageId": "drone_resin", "quantity": 19 }, { "salvageId": "unstable_gel", "quantity": 17 }], "effect": "Revive Speed (+20)" },
+        { "rank": 2, "factionLevelRequired": 19, "creditCost": 3500, "salvage": [{ "salvageId": "reflex_coil", "quantity": 5 }, { "salvageId": "biomata_node", "quantity": 5 }], "effect": "Revive Speed (+20)" },
+        { "rank": 3, "factionLevelRequired": 27, "creditCost": 5000, "salvage": [{ "salvageId": "synapse_cube", "quantity": 2 }, { "salvageId": "biomata_resin", "quantity": 9 }], "effect": "Revive Speed (+20)" }
+      ]
+    },
+    {
+      "id": "enhanced_retaliator_lmg",
+      "name": "Enhanced Retaliator LMG",
+      "category": "Armory",
+      "description": "Unlocks Enhanced Retaliator LMG for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "biomata_node", "quantity": 4 }, { "salvageId": "drone_resin", "quantity": 11 }], "effect": "Unlocks Enhanced Retaliator LMG" }
+      ]
+    },
+    {
+      "id": "enhanced_mips_shotgun",
+      "name": "Enhanced MIPS Shotgun",
+      "category": "Armory",
+      "description": "Unlocks Enhanced WSTR Combat Shotgun for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 13, "creditCost": 2000, "salvage": [{ "salvageId": "biomata_node", "quantity": 6 }, { "salvageId": "drone_resin", "quantity": 18 }], "effect": "Unlocks Enhanced WSTR Combat Shotgun" }
+      ]
+    },
+    {
+      "id": "enhanced_mips_railgun",
+      "name": "Enhanced MIPS Railgun",
+      "category": "Armory",
+      "description": "Unlocks Enhanced ARES RG for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 15, "creditCost": 2000, "salvage": [{ "salvageId": "biomata_resin", "quantity": 12 }, { "salvageId": "biomata_node", "quantity": 4 }], "effect": "Unlocks Enhanced ARES RG" }
+      ]
+    },
+    {
+      "id": "deluxe_retaliator_lmg",
+      "name": "Deluxe Retaliator LMG",
+      "category": "Armory",
+      "description": "Unlocks Deluxe Retaliator LMG for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 20, "creditCost": 3500, "salvage": [{ "salvageId": "enzyme_replicator", "quantity": 9 }, { "salvageId": "reflex_coil", "quantity": 3 }], "effect": "Unlocks Deluxe Retaliator LMG" }
+      ]
+    },
+    {
+      "id": "deluxe_mips_shotgun",
+      "name": "Deluxe MIPS Shotgun",
+      "category": "Armory",
+      "description": "Unlocks Deluxe WSTR Combat Shotgun for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 23, "creditCost": 5000, "salvage": [{ "salvageId": "synapse_cube", "quantity": 2 }, { "salvageId": "biomata_resin", "quantity": 9 }], "effect": "Unlocks Deluxe WSTR Combat Shotgun" }
+      ]
+    },
+    {
+      "id": "deluxe_mips_railgun",
+      "name": "Deluxe MIPS Railgun",
+      "category": "Armory",
+      "description": "Unlocks Deluxe ARES RG for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 25, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }, { "salvageId": "enzyme_replicator", "quantity": 7 }], "effect": "Unlocks Deluxe ARES RG" }
+      ]
+    },
+    {
+      "id": "leech_exe",
+      "name": "Leech.Exe",
+      "category": "Function",
+      "description": "Knife attacks restore a small amount of health.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 28, "creditCost": 5000, "salvage": [{ "salvageId": "synapse_cube", "quantity": 2 }], "effect": "Health restore on knife attacks" }
+      ]
+    },
+    {
+      "id": "heat_death_exe",
+      "name": "Heat_Death.Exe",
+      "category": "Function",
+      "description": "Eliminating a hostile reduces your heat buildup.",
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 3 }, { "salvageId": "enzyme_replicator", "quantity": 11 }], "effect": "Reduced heat on hostile elimination" }
+      ]
+    }
+  ]
+}

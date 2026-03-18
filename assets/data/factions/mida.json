@@ -1,0 +1,190 @@
+{
+  "id": "mida",
+  "name": "MIDA",
+  "color": "#bf72e4",
+  "description": "Utility and equipment.",
+  "agent": "Coda",
+  "capstones": [
+    { "level": 1, "name": "Castling", "nodesRequired": 5, "rankRequired": 0, "description": "ROOK will now start with a stack of Claymores. MIDA will now barter their wares for certain Deluxe Salvage." },
+    { "level": 2, "name": "Treasure Hunter", "nodesRequired": 10, "rankRequired": 0, "description": "MIDA Treasure Reputation (+20%)." },
+    { "level": 3, "name": "Sponsorship [MIDA]", "nodesRequired": 15, "rankRequired": 0, "description": "Unlocks MIDA Advanced Sponsored Kit for purchase in the Armory. MIDA will now barter their wares for certain Superior Salvage." },
+    { "level": 4, "name": "Bonus Equipment", "nodesRequired": 20, "rankRequired": 0, "description": "MIDA standard contracts will now always award at least a grenade or gadget." },
+    { "level": 5, "name": "Dome Up", "nodesRequired": 25, "rankRequired": 0, "description": "Unlocks Bubble Shields for purchase in the Armory." },
+    { "level": 6, "name": "STEADY_HAND.EXE", "nodesRequired": 29, "rankRequired": 0, "description": "Allows you to disarm Claymore Mines. MIDA will now barter their wares for certain Prestige Salvage." }
+  ],
+  "upgrades": [
+    {
+      "id": "bad_step",
+      "name": "Bad Step",
+      "category": "Armory",
+      "description": "Unlocks Claymores for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 1, "creditCost": 750, "salvage": [{ "salvageId": "unstable_lead", "quantity": 13 }], "effect": "Unlocks Claymores" }
+      ]
+    },
+    {
+      "id": "hot_potato",
+      "name": "Hot Potato",
+      "category": "Armory",
+      "description": "Unlocks Heat Grenades for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 750, "salvage": [{ "salvageId": "unstable_lead", "quantity": 16 }], "effect": "Unlocks Heat Grenades" }
+      ]
+    },
+    {
+      "id": "sprinter",
+      "name": "Sprinter",
+      "category": "Armory",
+      "description": "Unlocks Bionic Leg Upgrades implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 2, "creditCost": 750, "salvage": [{ "salvageId": "unstable_lead", "quantity": 13 }], "effect": "Unlocks Bionic Leg Upgrades V2 Implant" },
+        { "rank": 2, "factionLevelRequired": 9, "creditCost": 1500, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 5 }, { "salvageId": "dynamic_compounds", "quantity": 8 }], "effect": "Unlocks Bionic Leg Upgrades V3 Implant" },
+        { "rank": 3, "factionLevelRequired": 24, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 10 }, { "salvageId": "ballistic_turbine", "quantity": 3 }], "effect": "Unlocks Bionic Leg Upgrades V4 Implant" }
+      ]
+    },
+    {
+      "id": "flex_matrix_exe",
+      "name": "FLEX_MATRIX.EXE",
+      "category": "Function",
+      "description": "Agility increases your movement speed and jump height.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 3, "creditCost": 750, "salvage": [{ "salvageId": "unstable_lead", "quantity": 16 }], "effect": "Agility (+20)" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 1500, "salvage": [{ "salvageId": "surveillance_lens", "quantity": 28 }, { "salvageId": "dynamic_compounds", "quantity": 10 }], "effect": "Agility (+20)" },
+        { "rank": 3, "factionLevelRequired": 16, "creditCost": 2000, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 8 }, { "salvageId": "dynamic_compounds", "quantity": 26 }], "effect": "Agility (+20)" }
+      ]
+    },
+    {
+      "id": "graceful",
+      "name": "Graceful",
+      "category": "Armory",
+      "description": "Unlocks Graceful Landing Upgrades implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 4, "creditCost": 1500, "salvage": [{ "salvageId": "surveillance_lens", "quantity": 9 }, { "salvageId": "unstable_lead", "quantity": 5 }], "effect": "Unlocks Graceful Landing Upgrades V2 Implant" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 2000, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 8 }, { "salvageId": "dynamic_compounds", "quantity": 26 }], "effect": "Unlocks Graceful Landing Upgrades V3 Implant" },
+        { "rank": 3, "factionLevelRequired": 23, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 8 }, { "salvageId": "ballistic_turbine", "quantity": 3 }], "effect": "Unlocks Graceful Landing Upgrades V4 Implant" }
+      ]
+    },
+    {
+      "id": "anti_virus_packs",
+      "name": "Anti-Virus Packs",
+      "category": "Armory",
+      "description": "Unlocks Anti-Virus Packs for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 5, "creditCost": 1500, "salvage": [{ "salvageId": "unstable_lead", "quantity": 23 }], "effect": "Unlocks Anti-Virus Packs" }
+      ]
+    },
+    {
+      "id": "explosives",
+      "name": "Explosives",
+      "category": "Armory",
+      "description": "Unlocks Frag Grenades for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 5, "creditCost": 750, "salvage": [{ "salvageId": "unstable_lead", "quantity": 16 }], "effect": "Unlocks Frag Grenades" }
+      ]
+    },
+    {
+      "id": "survivor",
+      "name": "Survivor",
+      "category": "Armory",
+      "description": "Unlocks Survivor Kit implants for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 6, "creditCost": 1500, "salvage": [{ "salvageId": "surveillance_lens", "quantity": 13 }, { "salvageId": "unstable_lead", "quantity": 9 }], "effect": "Unlocks Survivor Kit V2 Implant" },
+        { "rank": 2, "factionLevelRequired": 12, "creditCost": 1500, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 6 }, { "salvageId": "dynamic_compounds", "quantity": 11 }], "effect": "Unlocks Survivor Kit V3 Implant" },
+        { "rank": 3, "factionLevelRequired": 25, "creditCost": 3500, "salvage": [{ "salvageId": "biolens_seed", "quantity": 10 }, { "salvageId": "ballistic_turbine", "quantity": 3 }], "effect": "Unlocks Survivor Kit V4 Implant" }
+      ]
+    },
+    {
+      "id": "bullseye",
+      "name": "Bullseye",
+      "category": "Armory",
+      "description": "Unlocks Flechette Grenades for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 8, "creditCost": 1500, "salvage": [{ "salvageId": "dynamic_compounds", "quantity": 15 }, { "salvageId": "surveillance_lens", "quantity": 8 }], "effect": "Unlocks Flechette Grenades" }
+      ]
+    },
+    {
+      "id": "spare_rounds",
+      "name": "Spare Rounds",
+      "category": "Armory",
+      "description": "Unlocks Ammo Crates for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 8, "creditCost": 1500, "salvage": [{ "salvageId": "dynamic_compounds", "quantity": 19 }, { "salvageId": "surveillance_lens", "quantity": 9 }], "effect": "Unlocks Ammo Crates" },
+        { "rank": 2, "factionLevelRequired": 11, "creditCost": 2000, "salvage": [{ "salvageId": "volatile_compounds", "quantity": 6 }, { "salvageId": "surveillance_lens", "quantity": 16 }], "effect": "Unlocks additional Ammo Crates" }
+      ]
+    },
+    {
+      "id": "eyes_open",
+      "name": "Eyes Open",
+      "category": "Armory",
+      "description": "Unlocks Proximity Sensor for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 9, "creditCost": 2000, "salvage": [{ "salvageId": "volatile_compounds", "quantity": 28 }, { "salvageId": "surveillance_lens", "quantity": 14 }], "effect": "Unlocks Proximity Sensor" }
+      ]
+    },
+    {
+      "id": "got_em",
+      "name": "Got Em",
+      "category": "Armory",
+      "description": "Unlocks Trap Packs for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 10, "creditCost": 1500, "salvage": [{ "salvageId": "dynamic_compounds", "quantity": 18 }, { "salvageId": "surveillance_lens", "quantity": 9 }], "effect": "Unlocks Trap Packs" }
+      ]
+    },
+    {
+      "id": "chemist",
+      "name": "Chemist",
+      "category": "Armory",
+      "description": "Unlocks Chem Grenades for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 11, "creditCost": 1500, "salvage": [{ "salvageId": "volatile_compounds", "quantity": 8 }, { "salvageId": "surveillance_lens", "quantity": 10 }], "effect": "Unlocks Chem Grenades" }
+      ]
+    },
+    {
+      "id": "anti_virus_exe",
+      "name": "ANTI_VIRUS.EXE",
+      "category": "Function",
+      "description": "Gain a small portion of active Anti-Virus protection at the beginning of each run.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 11, "creditCost": 1500, "salvage": [{ "salvageId": "surveillance_lens", "quantity": 28 }, { "salvageId": "dynamic_compounds", "quantity": 10 }], "effect": "Active Anti-Virus Protection +40s" },
+        { "rank": 2, "factionLevelRequired": 18, "creditCost": 2000, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 12 }, { "salvageId": "volatile_compounds", "quantity": 4 }], "effect": "Active Anti-Virus Protection (+40s)" },
+        { "rank": 3, "factionLevelRequired": 26, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 2 }], "effect": "Active Anti-Virus Protection (+40s)" }
+      ]
+    },
+    {
+      "id": "lights_out",
+      "name": "Lights Out",
+      "category": "Armory",
+      "description": "Unlocks EMP Grenades for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 12, "creditCost": 2000, "salvage": [{ "salvageId": "volatile_compounds", "quantity": 6 }, { "salvageId": "surveillance_lens", "quantity": 16 }], "effect": "Unlocks EMP Grenades" }
+      ]
+    },
+    {
+      "id": "cardio_kick",
+      "name": "Cardio Kick",
+      "category": "Armory",
+      "description": "Unlocks Cardio Kicks for purchase in the Armory.",
+      "ranks": [
+        { "rank": 1, "factionLevelRequired": 12, "creditCost": 1500, "salvage": [{ "salvageId": "thoughtwave_lens", "quantity": 4 }, { "salvageId": "dynamic_compounds", "quantity": 7 }], "effect": "Unlocks Cardio Kicks" }
+      ]
+    },
+    {
+      "id": "full_throttle_exe",
+      "name": "Full_Throttle.Exe",
+      "category": "Function",
+      "description": "Gain the effects of Cardio Kick for a short duration at the beginning of each run.",
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [{ "salvageId": "alien_alloy", "quantity": 3 }, { "salvageId": "ballistic_turbine", "quantity": 11 }], "effect": "Cardio Kick effect on run start" }
+      ]
+    },
+    {
+      "id": "cloud_cover_exe",
+      "name": "Cloud_Cover.Exe",
+      "category": "Technology",
+      "description": "Automatically deploy a smoke cloud when activating an exfil site.",
+      "ranks": [
+        { "rank": 1, "vipRankRequired": 1, "creditCost": 5000, "salvage": [{ "salvageId": "hazard_capsule", "quantity": 3 }, { "salvageId": "biolens_seed", "quantity": 12 }], "effect": "Auto smoke cloud on exfil" }
+      ]
+    }
+  ]
+}
