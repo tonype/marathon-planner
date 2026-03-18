@@ -1,0 +1,60 @@
+[
+  {
+    "id": "dire_marsh",
+    "name": "Dire Marsh",
+    "description": "New Cascadia Colony Agricultural Production",
+    "zones": [
+      { "id": "maintenance", "name": "Maintenance" },
+      { "id": "algae_ponds", "name": "Algae Ponds" },
+      { "id": "ai_uplink", "name": "AI Uplink" },
+      { "id": "complex", "name": "Complex" },
+      { "id": "bio_research", "name": "Bio Research" },
+      { "id": "greenhouse", "name": "Greenhouse" },
+      { "id": "quarantine", "name": "Quarantine" },
+      { "id": "west_gate", "name": "West Gate" },
+      { "id": "intersection", "name": "Intersection" },
+      { "id": "east_gate", "name": "East Gate" },
+      { "id": "canal", "name": "Canal" },
+      { "id": "anomaly", "name": "Anomaly" }
+    ]
+  },
+  {
+    "id": "outpost",
+    "name": "Outpost",
+    "description": "UESC Military Installation",
+    "zones": [
+      { "id": "pinwheel_base", "name": "Pinwheel Base" },
+      { "id": "dormitories", "name": "Dormitories" },
+      { "id": "orientation", "name": "Orientation" },
+      { "id": "flight_control", "name": "Flight Control" },
+      { "id": "airfield", "name": "Airfield" },
+      { "id": "processing", "name": "Processing" },
+      { "id": "command_wing", "name": "Command Wing" },
+      { "id": "destroyed_wing", "name": "Destroyed Wing" },
+      { "id": "drone_wing", "name": "Drone Wing" }
+    ]
+  },
+  {
+    "id": "perimeter",
+    "name": "Perimeter",
+    "description": "New Cascadia Colony Research Expansion",
+    "zones": [
+      { "id": "station", "name": "Station" },
+      { "id": "north_relay", "name": "North Relay" },
+      { "id": "south_relay", "name": "South Relay" },
+      { "id": "data_wall", "name": "Data Wall" },
+      { "id": "hauler", "name": "Hauler" },
+      { "id": "overflow", "name": "Overflow" },
+      { "id": "columns", "name": "Columns" },
+      { "id": "ravine", "name": "Ravine" },
+      { "id": "east_wall", "name": "East Wall" },
+      { "id": "tunnels", "name": "Tunnels" }
+    ]
+  },
+  {
+    "id": "cryo_archive",
+    "name": "Cryo Archive",
+    "description": "// REDACTED //",
+    "zones": []
+  }
+]

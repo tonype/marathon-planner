@@ -1,0 +1,627 @@
+{
+  "id": "traxus",
+  "name": "Traxus",
+  "color": "#ff7300",
+  "description": "Weapons and mods.",
+  "agent": "Vulcan",
+  "capstones": [
+    {
+      "level": 1,
+      "name": "Proficient",
+      "nodesRequired": 5,
+      "rankRequired": 0,
+      "description": "ROOK will now start runs with an Enhanced Weapon. Traxus will now barter their wares for certain Deluxe Salvage."
+    },
+    {
+      "level": 2,
+      "name": "Treasure Hunter",
+      "nodesRequired": 10,
+      "rankRequired": 0,
+      "description": "Traxus Treasure Reputation (+20%)."
+    },
+    {
+      "level": 3,
+      "name": "Sponsorship [Traxus]",
+      "nodesRequired": 15,
+      "rankRequired": 0,
+      "description": "Unlocks Traxus Advanced Sponsored Kit for purchase in the Armory. Traxus will now barter their wares for certain Superior Salvage."
+    },
+    {
+      "level": 4,
+      "name": "Bonus Mod",
+      "nodesRequired": 20,
+      "rankRequired": 0,
+      "description": "Traxus standard contracts will now award a bonus weapon mod in addition to other rewards."
+    },
+    {
+      "level": 5,
+      "name": "Deluxe Weapons",
+      "nodesRequired": 25,
+      "rankRequired": 0,
+      "description": "Unlocks Deluxe Weapons for purchase in the Armory."
+    },
+    {
+      "level": 6,
+      "name": "Superior Mods",
+      "nodesRequired": 28,
+      "rankRequired": 0,
+      "description": "Unlocks Superior weapon mods in the Armory. Traxus will now barter their wares for certain Prestige Salvage."
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ar_mods",
+      "name": "AR Mods",
+      "category": "Armory",
+      "description": "Unlocks rotating Enhanced AR mods from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 2,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks a rotating Enhanced AR mod"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 8,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "altered_wire",
+              "quantity": 7
+            },
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 6
+            }
+          ],
+          "effect": "Unlocks an additional rotating Enhanced AR mod"
+        }
+      ]
+    },
+    {
+      "id": "precision_mods",
+      "name": "Precision Mods",
+      "category": "Armory",
+      "description": "Unlocks rotating Enhanced precision weapon mods from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 7,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 19
+            }
+          ],
+          "effect": "Unlocks a rotating Enhanced precision weapon mod",
+          "titleOverride": "Precision Mods"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 13,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "deimosite_rods",
+              "quantity": 19
+            },
+            {
+              "salvageId": "altered_wire",
+              "quantity": 7
+            }
+          ],
+          "effect": "Unlocks an additional rotating Enhanced precision weapon mod",
+          "titleOverride": "Precision Mods+"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 19,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "cetinite_rods",
+              "quantity": 8
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 4
+            }
+          ],
+          "effect": "Unlocks an additional rotating Enhanced precision weapon mod",
+          "titleOverride": "Precision Mods++"
+        }
+      ]
+    },
+    {
+      "id": "enhanced_light_ar",
+      "name": "Enhanced Light AR",
+      "category": "Armory",
+      "description": "Unlocks Enhanced M77 AR for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 14,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "anomalous_wire",
+              "quantity": 10
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 4
+            }
+          ],
+          "effect": "Unlocks Enhanced M77 AR"
+        }
+      ]
+    },
+    {
+      "id": "deluxe_ar_mods",
+      "name": "Deluxe AR Mods",
+      "category": "Armory",
+      "description": "Unlocks a rotating Deluxe AR mod in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 22,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "alien_alloy",
+              "quantity": 2
+            }
+          ],
+          "effect": "Unlocks a rotating Deluxe AR mod"
+        }
+      ]
+    },
+    {
+      "id": "mips_sniper",
+      "name": "MIPS Sniper",
+      "category": "Armory",
+      "description": "Unlocks Longshot Sniper Rifle for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 9,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "anomalous_wire",
+              "quantity": 5
+            },
+            {
+              "salvageId": "plastic_filament",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks Longshot Sniper Rifle",
+          "titleOverride": "MIPS Sniper"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 20,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "ballistic_turbine",
+              "quantity": 9
+            },
+            {
+              "salvageId": "predictive_framework",
+              "quantity": 3
+            }
+          ],
+          "effect": "Unlocks Enhanced Longshot Sniper Rifle",
+          "titleOverride": "Enhanced MIPS Sniper"
+        }
+      ]
+    },
+    {
+      "id": "enhanced_hardline_pr",
+      "name": "Enhanced Hardline PR",
+      "category": "Armory",
+      "description": "Unlocks Enhanced Hardline PR for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 12,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "anomalous_wire",
+              "quantity": 7
+            },
+            {
+              "salvageId": "plastic_filament",
+              "quantity": 21
+            }
+          ],
+          "effect": "Unlocks Enhanced Hardline PR"
+        }
+      ]
+    },
+    {
+      "id": "deluxe_precision_mods",
+      "name": "Deluxe Precision Mods",
+      "category": "Armory",
+      "description": "Unlocks a rotating Deluxe precision weapon mod from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 25,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "alien_alloy",
+              "quantity": 2
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 9
+            }
+          ],
+          "effect": "Unlocks a rotating Deluxe precision weapon mod"
+        }
+      ]
+    },
+    {
+      "id": "smg_mods",
+      "name": "SMG Mods",
+      "category": "Armory",
+      "description": "Unlocks rotating Enhanced SMG mods from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 1,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 10
+            }
+          ],
+          "effect": "Unlocks a rotating Enhanced SMG mod"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 6,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "deimosite_rods",
+              "quantity": 7
+            },
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 6
+            }
+          ],
+          "effect": "Unlocks an additional rotating Enhanced SMG mod"
+        }
+      ]
+    },
+    {
+      "id": "volt_mods",
+      "name": "Volt Mods",
+      "category": "Armory",
+      "description": "Unlocks rotating Enhanced volt weapon mods from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 3,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 13
+            }
+          ],
+          "effect": "Unlocks a rotating Enhanced volt weapon mod",
+          "titleOverride": "Volt Mods"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 11,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "deimosite_rods",
+              "quantity": 12
+            },
+            {
+              "salvageId": "altered_wire",
+              "quantity": 6
+            }
+          ],
+          "effect": "Unlocks an additional rotating Enhanced volt weapon mod",
+          "titleOverride": "Volt Mods+"
+        },
+        {
+          "rank": 3,
+          "factionLevelRequired": 17,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "cetinite_rods",
+              "quantity": 6
+            },
+            {
+              "salvageId": "altered_wire",
+              "quantity": 11
+            }
+          ],
+          "effect": "Unlocks a rotating Enhanced volt weapon mod",
+          "titleOverride": "Precision Volt Mods"
+        }
+      ]
+    },
+    {
+      "id": "volt_pr",
+      "name": "Volt PR",
+      "category": "Armory",
+      "description": "Unlocks V66 Lookout for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 8,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "deimosite_rods",
+              "quantity": 19
+            },
+            {
+              "salvageId": "altered_wire",
+              "quantity": 7
+            }
+          ],
+          "effect": "Unlocks V66 Lookout",
+          "titleOverride": "Volt PR"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 18,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "predictive_framework",
+              "quantity": 5
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 7
+            }
+          ],
+          "effect": "Unlocks Enhanced V66 Lookout",
+          "titleOverride": "Enhanced Volt PR"
+        }
+      ]
+    },
+    {
+      "id": "enhanced_volt_smg",
+      "name": "Enhanced Volt Submachine Gun",
+      "category": "Armory",
+      "description": "Unlocks Enhanced V22 Volt Thrower SMG for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 15,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "cetinite_rods",
+              "quantity": 12
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 5
+            }
+          ],
+          "effect": "Unlocks Enhanced V22 Volt Thrower SMG"
+        }
+      ]
+    },
+    {
+      "id": "deluxe_volt_mods",
+      "name": "Deluxe Volt Mods",
+      "category": "Armory",
+      "description": "Unlocks a rotating Deluxe precision volt weapon mod from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 23,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "predictive_framework",
+              "quantity": 7
+            },
+            {
+              "salvageId": "ballistic_turbine",
+              "quantity": 3
+            }
+          ],
+          "effect": "Unlocks a rotating Deluxe precision volt weapon mod"
+        }
+      ]
+    },
+    {
+      "id": "deluxe_smg_mods",
+      "name": "Deluxe SMG Mods",
+      "category": "Armory",
+      "description": "Unlocks a rotating Deluxe SMG mod in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 18,
+          "creditCost": 3500,
+          "salvage": [
+            {
+              "salvageId": "predictive_framework",
+              "quantity": 4
+            },
+            {
+              "salvageId": "tachyon_filament",
+              "quantity": 6
+            }
+          ],
+          "effect": "Unlocks a rotating Deluxe SMG mod"
+        }
+      ]
+    },
+    {
+      "id": "enhanced_heavy_smg",
+      "name": "Enhanced Heavy Submachine Gun",
+      "category": "Armory",
+      "description": "Unlocks Enhanced Bully SMG for purchase in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 10,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "deimosite_rods",
+              "quantity": 23
+            },
+            {
+              "salvageId": "altered_wire",
+              "quantity": 9
+            }
+          ],
+          "effect": "Unlocks Enhanced Bully SMG"
+        }
+      ]
+    },
+    {
+      "id": "enhanced_chips",
+      "name": "Enhanced Chips",
+      "category": "Armory",
+      "description": "Unlocks a set of Enhanced weapon chip mods from the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 5,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "altered_wire",
+              "quantity": 7
+            },
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 6
+            }
+          ],
+          "effect": "Unlocks Enhanced weapon chip mods"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 10,
+          "creditCost": 1500,
+          "salvage": [
+            {
+              "salvageId": "altered_wire",
+              "quantity": 19
+            },
+            {
+              "salvageId": "plastic_filament",
+              "quantity": 9
+            }
+          ],
+          "effect": "Unlocks additional Enhanced weapon chip mods"
+        }
+      ]
+    },
+    {
+      "id": "deluxe_chips",
+      "name": "Deluxe Chips",
+      "category": "Armory",
+      "description": "Unlocks a set of Deluxe weapon chip mods in the Armory.",
+      "ranks": [
+        {
+          "rank": 1,
+          "vipRankRequired": 1,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "alien_alloy",
+              "quantity": 3
+            },
+            {
+              "salvageId": "reflex_coil",
+              "quantity": 11
+            }
+          ],
+          "effect": "Unlocks Deluxe weapon chip mods"
+        }
+      ]
+    },
+    {
+      "id": "tad_boost_exe",
+      "name": "Tad_Boost.Exe",
+      "category": "Function",
+      "description": "Expands the ping's area of effect when using a TAD.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 4,
+          "creditCost": 750,
+          "salvage": [
+            {
+              "salvageId": "unstable_gunmetal",
+              "quantity": 19
+            }
+          ],
+          "effect": "TAD Ping Area (+20m)"
+        }
+      ]
+    },
+    {
+      "id": "tracker_exe",
+      "name": "Tracker.Exe",
+      "category": "Stat",
+      "description": "Ping Duration increases how long your pings persist on hostile targets.",
+      "ranks": [
+        {
+          "rank": 1,
+          "factionLevelRequired": 15,
+          "creditCost": 2000,
+          "salvage": [
+            {
+              "salvageId": "anomalous_wire",
+              "quantity": 7
+            },
+            {
+              "salvageId": "plastic_filament",
+              "quantity": 21
+            }
+          ],
+          "effect": "Ping Duration (+30)"
+        },
+        {
+          "rank": 2,
+          "factionLevelRequired": 26,
+          "creditCost": 5000,
+          "salvage": [
+            {
+              "salvageId": "alien_alloy",
+              "quantity": 2
+            }
+          ],
+          "effect": "Ping Duration (+30)"
+        }
+      ]
+    }
+  ]
+}

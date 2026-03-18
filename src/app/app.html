@@ -1,0 +1,100 @@
+@if (!data.loaded()) {
+  <div class="h-screen flex items-center justify-center">
+    <div class="text-neutral-500 text-sm">Loading data...</div>
+  </div>
+} @else {
+  <app-circuit-bg />
+  <app-audio-player />
+  <div class="h-screen flex flex-col relative" style="z-index: 1">
+    <!-- Header -->
+    <header class="bg-surface-1 border-b border-surface-3 px-6 py-3 flex items-center justify-between">
+      <h1 class="text-lg font-bold text-neutral-200 tracking-wide">MARATHON <span class="text-neutral-500 font-normal">Upgrade Planner</span></h1>
+      <!-- View toggle -->
+      <div class="flex gap-1 bg-surface-2 rounded p-1">
+        <button
+          class="px-4 py-1.5 text-xs font-medium rounded cursor-pointer transition-colors"
+          [class.bg-surface-4]="activeView() === 'browse'"
+          [class.text-neutral-200]="activeView() === 'browse'"
+          [class.text-neutral-500]="activeView() !== 'browse'"
+          (click)="activeView.set('browse')"
+        >
+          Browse
+        </button>
+        <button
+          class="px-4 py-1.5 text-xs font-medium rounded cursor-pointer transition-colors"
+          [class.bg-surface-4]="activeView() === 'plan'"
+          [class.text-neutral-200]="activeView() === 'plan'"
+          [class.text-neutral-500]="activeView() !== 'plan'"
+          (click)="activeView.set('plan')"
+        >
+          Plan
+          @if (planner.wantList().length > 0) {
+            <span class="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-surface-3 text-neutral-400">{{ planner.wantList().length }}</span>
+          }
+        </button>
+      </div>
+    </header>
+
+    <!-- Faction tabs (browse only) -->
+    @if (activeView() === 'browse') {
+      <app-faction-tab-bar
+        [factions]="data.factions()"
+        [activeFactionId]="activeFactionId()"
+        (tabSelected)="activeFactionId.set($event)"
+      />
+    }
+
+    <!-- Content -->
+    @if (activeView() === 'browse') {
+      <div class="flex-1 flex overflow-hidden">
+        <!-- Left: upgrade list -->
+        <div class="w-80 min-w-80 border-r border-surface-3 bg-surface-0">
+          @if (activeFaction(); as faction) {
+            <app-upgrade-list
+              [upgrades]="faction.upgrades"
+              [selectedUpgradeId]="selectedUpgradeId()"
+              [factionColor]="faction.color"
+              [wantedUpgradeIds]="wantedUpgradeIdsForFaction()"
+              (upgradeSelected)="selectUpgrade($event)"
+            />
+          }
+        </div>
+        <!-- Right: upgrade detail -->
+        <div class="flex-1 bg-surface-1">
+          <app-upgrade-detail
+            [upgrade]="selectedUpgrade()"
+            [factionId]="activeFactionId()"
+            [factionColor]="activeFaction()?.color ?? '#888'"
+          />
+        </div>
+      </div>
+    } @else {
+      <div class="flex-1 overflow-hidden">
+        <app-action-plan />
+      </div>
+    }
+
+    <!-- Footer: running totals -->
+    @if (activeView() === 'browse' && planner.wantList().length > 0) {
+      <footer class="bg-surface-1 border-t border-surface-3 px-6 py-3 flex items-center justify-between">
+        <div class="flex gap-6">
+          <div class="text-sm text-neutral-400">
+            <span class="text-amber-300 font-bold">{{ planner.totalCredits() | number }}</span> Credits
+          </div>
+          <div class="text-sm text-neutral-400">
+            <span class="text-neutral-200 font-bold">{{ planner.totalSalvage().size }}</span> Salvage Types
+          </div>
+          <div class="text-sm text-neutral-400">
+            <span class="text-neutral-200 font-bold">{{ planner.wantList().length }}</span> Upgrades
+          </div>
+        </div>
+        <button
+          class="text-xs text-neutral-500 hover:text-neutral-300 cursor-pointer"
+          (click)="activeView.set('plan')"
+        >
+          View Plan &rarr;
+        </button>
+      </footer>
+    }
+  </div>
+}
